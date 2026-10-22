@@ -1,0 +1,18 @@
+Group Name: SG Culture Pass Chatbot
+
+Course: NUS-ISS Intelligent Reasoning Systems (IRS)
+Practice Module: Group 4
+
+Group Members:
+1. Abinaya Muruganandam
+2. Adhithi Muruganandam
+3. Saranya Srinivasan
+
+Student IDs:
+1. A0181013X
+2. A0181014W
+3. A0165428Y
+
+GitHub Repository:
+https://github.com/saranya-sai/SG-Culture-Pass-Chatbot
+
