@@ -1,0 +1,29 @@
+scenario,source,rejection_reason,text,latency_ms
+T1-01,llm,,Here are 5 picks for you that explore the world of pottery and clay.,876
+T1-02,llm,,"Here are five dance performance recommendations for you, featuring a range of styles and experiences.",810
+T1-03,llm,,Here are five classical music events that you might enjoy. We've curated these picks based on their focus on classical music.,1120
+T1-04,llm,,"Here are 5 unique experiences for you to consider, each priced at $20 or less. We've curated a mix of heritage, visual arts, and music events that cater to different interests.",1724
+T1-05,llm,,"Here are five unique experiences for you to consider this weekend. From heritage trails to dance performances, there's something for everyone.",1164
+T1-06,llm,,"Here are 5 picks for you that delve into Singapore's rich history and heritage, offering a glimpse into the city's past and cultural significance. 1. Roll with History: A Popiah Journey Through Joo Chiat 2. Let's Explore: A Heritage Trail around Temasek Shophouse 3. Lee Kong Chian Natural History Museum 4. Whispers of the Twin Quays 5. Travel Sketching Workshop: Capturing Singapore's Heritage",4090
+T1-07,llm,,"Here are 5 picks for you, featuring a mix of theatre, music, and dance performances in Mandarin. We've curated a selection of events that cater to different interests and budgets.",1682
+T1-08,llm,,"Here are 5 exciting picks for you in the East, offering a variety of experiences to suit different interests. From heritage walks to art workshops, there's something for everyone to enjoy.",1747
+T2-01,llm,,"Here are five painting workshops that you might enjoy, all taking place on Sat 12 Sep and Sun 13 Sep, with prices ranging from $46 to $70 per person.",1734
+T2-02,llm,,Here are 5 classical music events that fit within your budget of $40 per person. We've curated these options for you to enjoy a range of classical music experiences.,1679
+T2-03,llm,,"Here are five cultural experiences that you might enjoy, all within a budget of $50 and taking place from Mon 14 Sep – Sun 20 Sep. These events showcase the rich history and heritage of Singapore through its food and cultural traditions.",2212
+T2-04,llm,,"Here are five picks that celebrate Chinese culture, featuring a range of music, theatre, and comedy performances. From sing-alongs to stand-up comedy, there's something for everyone to enjoy.",1772
+T2-05,llm,,"Here are five craft-related activities near Geylang, each within your budget of $60.",875
+T2-06,llm,,Here are five exciting picks for you to enjoy dance performance and drama and theatre on Sat 19 Sep – Sun 20 Sep.,1220
+T2-07,llm,,"Here are 5 picks for you to explore in the West, each with a price tag of $30 or less. From heritage sites to music and dance performances, there's something for everyone in this selection.",1927
+T2-08,llm,,"Here are five picks for you that fit within your budget of $50 each, all related to drawing. 1. Caricature Art Workshop 2. Art of Caricature with Cartoon.SG 3. Still life drawing and sketching workshop 4. Pencil Drawing Workshop 5. Coloured Pencils Workshop",2865
+T2-09,llm,,"Here are five picks for you that feature choral and singing, as well as opera.",908
+T2-10,llm,,"Here are 5 picks for you to experience the rich Peranakan culture in the East, featuring a mix of heritage and visual arts. These events offer a unique glimpse into the history and traditions of the Peranakan community, with activities ranging from workshops to fashion exhibitions.",2488
+T3-01,llm,,Here are some fun activities for you and your kids to enjoy on Saturday 12 September and Sunday 13 September. We've picked out some great options that are suitable for children aged 5 and 8.,1895
+T3-02,llm,,We've curated a selection of live music events that you and your grandparent might enjoy. These events offer a range of musical experiences that are suitable for seniors.,1488
+T3-03,llm,,"Here are five unique experiences tailored for you and your partner to enjoy together on Saturday, 19 September.",1024
+T3-04,llm,,"Here are five fun activities for you and your 10-year-old kid, each within your budget of $25 per person. We've curated a selection of engaging experiences suitable for a 10-year-old, with prices ranging from $9 to $25.",2267
+T3-05,llm,,Here are some fun comedy options for you and your 15-year-old to enjoy together. We've curated a list of five shows that are suitable for a teenager.,1482
+T3-06,llm,,"Here are 5 fun and creative activities for you and your parent to enjoy together, all related to Visual Arts.",1048
+T3-07,llm,,"We've curated five unique experiences for you and your friend to enjoy together, each offering a special moment to cherish. From theatre to music, there's something for every taste and interest.",1722
+T3-08,llm,,"Here are five exciting picks for you and your friends to enjoy together, all within your budget of $50 per person. From music and dance to theatre and visual arts, there's something for everyone to enjoy.",1917
+T3-09,llm,,We've curated a selection of live music events that are suitable for you and your children. Here are some great options to consider. 1. Opus 26 2. Vasily Petrenko & Gautier Capuçon 3. Echoes of the Screen: Reimagined Drama Classics 《荧幕回声：经典剧集音乐会》 4. DIFFERENT: Drift 5. Esplanade Presents | Coffee Morning & Afternoon Tea Reflections of The Golden Era: Music from the '60s to '80s,4939
+T3-10,llm,,"Here are 5 picks for you and your parent to experience Chinese culture, with a range of activities to suit different interests and budgets. We've curated a selection of music, theatre, and comedy performances that showcase the richness and diversity of Chinese culture.",2265

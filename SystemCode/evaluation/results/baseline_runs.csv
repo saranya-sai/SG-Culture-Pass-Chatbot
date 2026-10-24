@@ -1,0 +1,85 @@
+scenario,tier,basis,returned,min_member_fit@k,P@k,R@k,nDCG@k,violation@k,undisclosed_violations,gold_relevant,ids,system,turns,clicks,filters,result_count
+T1-01,single,real,5,,0.0,0.0,0.33333333333333337,0.0,0,5,"[148984, 150550, 149022, 156997, 169838]",site_filter,,2,genre,43
+T1-01,single,real,5,,0.2,0.2,0.444376356100121,0.0,0,5,"[135049, 133782, 134897, 148984, 131860]",keyword_search,,1,,33
+T1-02,single,real,5,,1.0,1.0,1.0,0.0,0,10,"[169008, 169880, 160953, 169043, 169396]",site_filter,,2,genre,10
+T1-02,single,real,2,,0.2,0.2,0.21398626473452756,0.0,0,10,"[168614, 160953]",keyword_search,,1,,2
+T1-03,single,real,5,,0.4,0.4,0.5181822849033656,0.0,0,41,"[161788, 169638, 156796, 154768, 156272]",site_filter,,2,genre,65
+T1-03,single,real,5,,0.8,0.8,0.9125299483251055,0.0,0,41,"[155114, 155093, 170226, 157149, 152294]",keyword_search,,1,,7
+T1-04,single,real,5,,1.0,1.0,1.0,0.0,0,37,"[154768, 156272, 169838, 154769, 169963]",site_filter,,2,price,37
+T1-04,single,real,0,,0.0,0.0,0.0,,0,37,[],keyword_search,,1,,0
+T1-05,single,real,5,,1.0,1.0,1.0,0.0,0,66,"[154205, 160315, 161788, 168614, 148984]",site_filter,,2,dates,66
+T1-05,single,real,5,,0.2,0.2,0.13120507751234178,0.8,4,66,"[155132, 169176, 155096, 158543, 157057]",keyword_search,,1,,7
+T1-06,single,real,5,,0.8,0.8,0.9026211001048624,0.0,0,13,"[154205, 154494, 134223, 157504, 17383]",site_filter,,2,genre,15
+T1-06,single,real,5,,0.6,0.6,0.5181822849033656,0.0,0,13,"[169632, 131859, 132043, 136331, 134395]",keyword_search,,1,,9
+T1-07,single,rule,5,,1.0,1.0,1.0,0.0,0,12,"[168614, 154494, 169880, 168905, 169836]",site_filter,,2,language,12
+T1-07,single,rule,0,,0.0,0.0,0.0,,0,12,[],keyword_search,,1,,0
+T1-08,single,real,5,,0.2,0.2,0.13120507751234178,0.8,4,13,"[154205, 160315, 161788, 168614, 148984]",site_filter,,0,,147
+T1-08,single,real,0,,0.0,0.0,0.0,,0,13,[],keyword_search,,1,,0
+T2-01,multi,real,5,,0.4,0.4,0.5437656349863431,0.0,0,15,"[148984, 149022, 156997, 151905, 149028]",site_filter,,6,genre; dates; price,22
+T2-01,multi,real,5,,0.8,0.8,0.8687949224876583,0.2,1,15,"[134222, 134225, 169862, 155335, 151065]",keyword_search,,1,,43
+T2-02,multi,real,5,,0.6,0.6,0.7698724385020872,0.0,0,6,"[157011, 169559, 155131, 155132, 168834]",site_filter,,6,genre; dates; price,10
+T2-02,multi,real,5,,0.0,0.0,0.0,1.0,5,6,"[155093, 170226, 157149, 157198, 152294]",keyword_search,,1,,5
+T2-03,multi,real,5,,1.0,1.0,1.0,0.0,0,6,"[134223, 17383, 149588, 131859, 157057]",site_filter,,6,genre; dates; price,5
+T2-03,multi,real,5,,0.4,0.4,0.47036528278595796,0.6,3,6,"[131859, 132043, 136331, 134395, 149588]",keyword_search,,1,,8
+T2-04,multi,rule,5,,1.0,1.0,1.0,0.0,0,6,"[169711, 169559, 170050, 170061, 152294]",site_filter,,4,dates; language,6
+T2-04,multi,rule,5,,0.0,0.0,0.0,1.0,5,6,"[169632, 157504, 161237, 166140, 149588]",keyword_search,,1,,5
+T2-05,multi,real,5,,0.2,0.25,0.48917488780562407,0.0,0,4,"[148984, 149022, 169838, 149028, 154620]",site_filter,,4,genre; price,11
+T2-05,multi,real,2,,0.0,0.0,0.0,1.0,2,4,"[135049, 149588]",keyword_search,,1,,2
+T2-06,multi,real,1,,0.2,1.0,1.0,0.0,0,1,[169880],site_filter,,5,genre; dates,1
+T2-06,multi,real,1,,0.0,0.0,0.0,1.0,1,1,[160953],keyword_search,,1,,1
+T2-07,multi,real,5,,0.0,0.0,0.0,1.0,5,1,"[168614, 169008, 156796, 154768, 156272]",site_filter,,4,dates; price,14
+T2-07,multi,real,0,,0.0,0.0,0.0,,0,1,[],keyword_search,,1,,0
+T2-08,multi,real,5,,0.8,0.8,0.830419897363192,0.2,1,5,"[148984, 149022, 169838, 149028, 154620]",site_filter,,4,genre; price,10
+T2-08,multi,real,3,,0.4,0.4,0.5087403079104242,0.3333333333333333,1,5,"[148984, 134897, 134893]",keyword_search,,1,,3
+T2-09,multi,real,5,,0.2,0.2,0.4463867350912054,0.0,0,13,"[161788, 169638, 156796, 154768, 156272]",site_filter,,6,genre; dates,43
+T2-09,multi,real,5,,0.4,0.4,0.5890442449142238,0.0,0,13,"[155093, 169925, 170025, 170226, 157149]",keyword_search,,1,,7
+T2-10,multi,real,5,,0.2,0.2,0.1695801026368081,0.8,4,5,"[154205, 154494, 134223, 157504, 17383]",site_filter,,2,genre,15
+T2-10,multi,real,5,,0.2,0.2,0.3391602052736162,0.8,4,5,"[136331, 149588, 156997, 156992, 140615]",keyword_search,,1,,9
+T3-01,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,43,"[160315, 161788, 154494, 169008, 156997]",site_filter,,9,dates; group-friendly; rating,19
+T3-01,group,synthetic,5,0.4,0.2,0.2,0.14606834984270645,0.8,4,43,"[154797, 155055, 170240, 153017, 154799]",keyword_search,,1,,10
+T3-02,group,synthetic,5,0.8,1.0,1.0,1.0,0.0,0,55,"[169638, 156796, 154768, 154769, 169836]",site_filter,,7,genre; group-friendly; venue access,51
+T3-02,group,synthetic,5,0.6,1.0,1.0,1.0,0.0,0,55,"[155093, 155055, 170226, 157149, 157198]",keyword_search,,1,,6
+T3-03,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,63,"[154768, 156272, 149022, 156997, 151065]",site_filter,,6,dates; group-friendly,28
+T3-03,group,synthetic,1,0.0,0.0,0.0,0.0,1.0,1,63,[155055],keyword_search,,1,,1
+T3-04,group,synthetic,5,1.0,0.4,0.4,0.4703652827859579,0.6,3,9,"[169008, 156796, 154768, 156272, 169838]",site_filter,,10,price; group-friendly; rating,22
+T3-04,group,synthetic,5,0.4,0.0,0.0,0.0,1.0,5,9,"[157149, 155093, 170226, 170061, 157198]",keyword_search,,1,,6
+T3-05,group,synthetic,3,1.0,0.0,0.0,0.29553891639141344,0.0,0,3,"[160315, 168905, 168608]",site_filter,,13,genre; group-friendly; rating,3
+T3-05,group,synthetic,3,0.3333333333333333,0.4,0.6666666666666666,0.624105567784388,0.0,0,3,"[169711, 155055, 170061]",keyword_search,,1,,3
+T3-06,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,43,"[138695, 154620, 154625, 140615, 155331]",site_filter,,4,genre; group-friendly,7
+T3-06,group,synthetic,5,0.2,0.6,0.6,0.7227265726449518,0.0,0,43,"[149028, 135570, 169838, 155055, 131861]",keyword_search,,1,,39
+T3-07,group,synthetic,5,,1.0,1.0,1.0,0.0,0,6,"[168316, 169925, 168608, 154785, 155092]",site_filter,,4,group-friendly; content access,6
+T3-07,group,synthetic,2,,0.0,0.0,0.0,1.0,2,6,"[169632, 155055]",keyword_search,,1,,2
+T3-08,group,real,5,,1.0,1.0,1.0,0.0,0,31,"[157011, 160953, 169043, 169396, 169588]",site_filter,,4,dates; price,31
+T3-08,group,real,0,,0.0,0.0,0.0,,0,31,[],keyword_search,,1,,0
+T3-09,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,50,"[161788, 156796, 154768, 156272, 154769]",site_filter,,9,genre; group-friendly; rating,24
+T3-09,group,synthetic,2,1.0,0.4,0.4,0.5531464700081438,0.0,0,50,"[157198, 155128]",keyword_search,,1,,2
+T3-10,group,rule,0,,0.0,0.0,0.0,,0,6,[],site_filter,,6,genre; dates; language,0
+T3-10,group,rule,5,,0.0,0.0,0.0,1.0,5,6,"[149588, 157504, 136331, 155055, 161237]",keyword_search,,1,,6
+T4-01,itinerary,real,3,,0.3333333333333333,0.3333333333333333,0.5679726963447116,0.3333333333333333,1,26,"[154205, 148984, 154494]",site_filter,,7,genre; dates,52
+T4-01,itinerary,real,3,,0.6666666666666666,0.6666666666666666,0.7039180890341348,0.3333333333333333,1,26,"[132043, 155055, 151060]",keyword_search,,1,,28
+T4-02,itinerary,synthetic,3,1.0,1.0,1.0,1.0,0.0,0,56,"[154494, 169008, 169638]",site_filter,,12,dates; group-friendly; rating,27
+T4-02,itinerary,synthetic,3,0.3333333333333333,0.0,0.0,0.0,1.0,3,56,"[155055, 154780, 154784]",keyword_search,,1,,3
+T4-03,itinerary,synthetic,3,1.0,1.0,1.0,1.0,0.0,0,42,"[154768, 156272, 149022]",site_filter,,9,genre; dates; group-friendly,23
+T4-03,itinerary,synthetic,3,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.23463936301137825,0.6666666666666666,2,42,"[155114, 155055, 149028]",keyword_search,,1,,10
+T4-04,itinerary,real,3,,0.3333333333333333,0.3333333333333333,0.6461858173485043,0.0,0,15,"[138695, 151060, 151065]",site_filter,,7,genre; dates,48
+T4-04,itinerary,real,3,,0.0,0.0,0.07821312100379275,0.6666666666666666,2,15,"[168914, 169963, 135049]",keyword_search,,1,,5
+T4-05,itinerary,real,3,,0.3333333333333333,0.3333333333333333,0.5679726963447116,0.3333333333333333,1,5,"[132043, 135055, 131859]",site_filter,,6,genre; dates,8
+T4-05,itinerary,real,3,,0.3333333333333333,0.3333333333333333,0.2960819109658653,0.6666666666666666,2,5,"[168914, 132043, 154783]",keyword_search,,1,,9
+T5-01,underspecified,synthetic,1,1.0,0.2,0.25,0.3903800499921017,0.0,0,4,[169008],site_filter,,11,dates; price; group-friendly; rating,1
+T5-01,underspecified,synthetic,1,1.0,0.0,0.0,0.0,1.0,1,4,[155055],keyword_search,,1,,1
+T5-02,underspecified,synthetic,5,1.0,0.4,1.0,1.0,0.0,0,2,"[154768, 156272, 161227, 148615, 153018]",site_filter,,8,genre; dates; group-friendly,6
+T5-02,underspecified,synthetic,0,,0.0,0.0,0.0,,0,2,[],keyword_search,,1,,0
+T5-03,underspecified,real,5,,0.8,1.0,0.9558295932317544,0.2,1,4,"[148984, 149022, 169838, 149028, 154620]",site_filter,,4,genre; price,10
+T5-03,underspecified,real,5,,0.4,0.5,0.34620964322385606,0.6,3,4,"[133782, 134897, 148984, 131860, 149022]",keyword_search,,1,,33
+T5-04,underspecified,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,17,"[161788, 156796, 154768, 154769, 169836]",site_filter,,6,genre; dates; group-friendly,7
+T5-04,underspecified,synthetic,0,,0.0,0.0,0.0,,0,17,[],keyword_search,,1,,0
+T5-05,underspecified,synthetic,3,1.0,0.6,0.6,0.7227265726449519,0.0,0,5,"[154768, 156272, 169838]",site_filter,,12,dates; price; group-friendly; rating,3
+T5-05,underspecified,synthetic,2,1.0,0.0,0.0,0.0,1.0,2,5,"[157149, 155055]",keyword_search,,1,,2
+T5-06,underspecified,real,5,,0.4,0.4,0.27727342735504823,0.6,3,20,"[154205, 160315, 161788, 168614, 148984]",site_filter,,2,dates,66
+T5-06,underspecified,real,0,,0.0,0.0,0.0,,0,20,[],keyword_search,,1,,0
+T6-01,impossible,real,0,,,,,,0,0,[],site_filter,,8,genre; dates; price,0
+T6-01,impossible,real,2,,,,,1.0,2,0,"[169632, 160953]",keyword_search,,1,,2
+T6-02,impossible,synthetic,0,,,,,,0,0,[],site_filter,,12,genre; dates; price; group-friendly; venue access; content access,0
+T6-02,impossible,synthetic,0,,,,,,0,0,[],keyword_search,,1,,0
+T6-03,impossible,real,0,,,,,,0,0,[],site_filter,,4,genre; dates,0
+T6-03,impossible,real,1,,,,,1.0,1,0,[157149],keyword_search,,1,,1

@@ -1,0 +1,63 @@
+venue_name,venue_type,va_wheelchair,va_guide_dog,va_calm_space,venue_address,postal_code,lat,lon,location_precision,geocode_status,search_text,used_override
+COMMON TOUCH,studio_or_shop,False,False,False,44 KALLANG PLACE FOUR STAR BUILDING SINGAPORE 339172,339172,1.313496935776391,103.8680189884402,exact,found,44 Kallang Place,True
+Visual Arts Centre at Dhoby Ghaut,arts_centre_or_gallery,False,True,False,10 PENANG ROAD SINGAPORE 238469,238469,1.298451893847406,103.8461123897303,exact,found,238469,True
+Peranakan Mansion in Joo Chiat,museum_or_heritage_site,False,True,False,1 JOO CHIAT ROAD CASSANDRA JOO CHIAT COMPLEX,NIL,1.315999000110891,103.89832700012,approximate,found,Joo Chiat Complex,True
+18 Chin Bee Avenue Singapore 619940,studio_or_shop,False,False,False,18 CHIN BEE AVENUE SINGAPORE 619940,619940,1.333232126573859,103.7111089749601,exact,found,18 Chin Bee Avenue Singapore 619940,False
+Arudio Ceramic MacPherson,studio_or_shop,False,False,False,171 PAYA LEBAR ROAD MACPHERSON MRT STATION,NIL,1.326839632324859,103.8900078604636,approximate,found,MacPherson MRT Station,True
+My Art Space,studio_or_shop,False,True,False,31 ORCHARD ROAD SINGAPORE 238888,238888,1.299241320809451,103.8440219754992,exact,found,238888,True
+Ministry of DJs - Pro DJ School,studio_or_shop,True,False,False,6 CLAYMORE HILL CLAYMORE PLAZA SINGAPORE 229571,229571,1.306814551404484,103.8316117927299,exact,found,229571,True
+Rumah Kim Choo,museum_or_heritage_site,False,False,False,111 EAST COAST ROAD SINGAPORE 428801,428801,1.305848989674391,103.9044536268259,exact,found,428801,True
+Hakko Products,studio_or_shop,True,True,False,1 GENTING LINK PERFECT ONE SINGAPORE 349518,349518,1.328653846643936,103.8738652412582,exact,found,349518,True
+"Artify Studio, Textile Centre, #12-07",studio_or_shop,False,False,False,200 JALAN SULTAN TEXTILE CENTRE SINGAPORE 199018,199018,1.303938356456172,103.8616307920936,exact,found,Textile Centre,False
+TAS Studio,studio_or_shop,False,False,False,,,,,,not_found,,False
+Believer Music | Velocity@Novena Square #02-56,studio_or_shop,False,True,False,238B THOMSON ROAD VELOCITY @ NOVENA SQUARE,NIL,1.319295425019076,103.8441913530767,exact,found,Velocity @ Novena Square,True
+Gin Thye 锦泰饼家,studio_or_shop,True,True,False,427 SEMBAWANG ROAD SEMBAWANG PARK SINGAPORE 758394,758394,1.427938572334104,103.8264861023611,exact,found,758394,True
+TCA Prologue Cafe (Tea. Coffee. Artisans),studio_or_shop,True,False,False,,,,,,not_found,,False
+TheArtHaus Katong Square,studio_or_shop,True,False,False,86 EAST COAST ROAD KATONG SQUARE SINGAPORE 428788,428788,1.30513510179214,103.9043071602881,exact,found,Katong Square,True
+UniqArts center #02-32,studio_or_shop,False,False,False,50 EAST COAST ROAD GRAND MERCURE ROXY HOTEL SINGAPORE 428769,428769,1.303356964015218,103.9046855040287,exact,found,428769,True
+Believer Music | Tampines Plaza 2 #01-01A,studio_or_shop,False,False,False,5 TAMPINES CENTRAL 1 TAMPINES PLAZA 2 SINGAPORE 529541,529541,1.353165162331279,103.9427077003319,exact,found,Tampines Plaza 2,True
+Believer Music | One Commonwealth #06-05,studio_or_shop,True,False,False,1 COMMONWEALTH LANE ONE COMMONWEALTH SINGAPORE 149544,149544,1.30442807145351,103.7967939410054,exact,found,One Commonwealth,True
+KGH Joo Chiat Popiah,studio_or_shop,False,False,False,1 JOO CHIAT ROAD CASSANDRA JOO CHIAT COMPLEX,NIL,1.315999000110891,103.89832700012,approximate,found,Joo Chiat Complex,True
+Sasha & Lulu Atelier @ Woods Square Solo 1 #04-52,studio_or_shop,False,False,False,12 WOODLANDS SQUARE WOODS SQUARE SINGAPORE 737715,737715,1.435305628940769,103.7845394812036,exact,found,Woods Square,True
+WaterB’s Fort Canning Kiosk (Tan Tye Place),studio_or_shop,False,False,False,TAN TYE PLACE,NIL,1.291176890576041,103.8451777707712,exact,found,Tan Tye Place,False
+Kamal Arts Gallery,arts_centre_or_gallery,True,False,True,1 ENGKU AMAN TURN WISMA GEYLANG SERAI SINGAPORE 408528,408528,1.316494157439073,103.8967884183523,exact,found,408528,True
+City Sprouts Punggol Greenhouse Plot A13,studio_or_shop,True,False,False,50 PUNGGOL EAST CITY SPROUTS @ PUNGGOL SINGAPORE 828826,828826,1.394664812557632,103.9167589554506,exact,found,828826,True
+Temasek Shophouse,museum_or_heritage_site,False,False,False,28 ORCHARD ROAD TEMASEK SHOPHOUSE SINGAPORE 238832,238832,1.299068690320366,103.8466478304435,exact,found,Temasek Shophouse,False
+Cloud Nine Private Dining,studio_or_shop,False,False,False,,,,,,not_found,,False
+42 Waterloo Street (42WS),arts_centre_or_gallery,True,True,True,42 WATERLOO STREET SINGAPORE 187951,187951,1.298396752465497,103.8509232366146,exact,found,42 Waterloo Street,False
+Lee Kong Chian Natural History Museum,museum_or_heritage_site,False,False,False,2 CONSERVATORY DRIVE LEE KONG CHIAN NATURAL HISTORY MUSEUM SINGAPORE 117377,117377,1.301491004201324,103.7736052419894,exact,found,Lee Kong Chian Natural History Museum,False
+The Blackbird Singapore (Gillman Barracks),arts_centre_or_gallery,False,False,False,6 LOCK ROAD GILLMAN BARRACKS SINGAPORE 108934,108934,1.277191812601132,103.8041487570202,exact,found,Gillman Barracks,False
+Mochiart Art Studio Prosper House,studio_or_shop,True,False,False,101 LORONG 23 GEYLANG PROSPER HOUSE SINGAPORE 388399,388399,1.31758851413649,103.8808716150777,exact,found,Prosper House,True
+"Singapore Chinese Cultural Centre Auditorium, Level 9 新加坡华族文化中心表演厅, 九楼",performing_arts_venue,True,True,False,1 STRAITS BOULEVARD SINGAPORE CHINESE CULTURAL CENTRE SINGAPORE 018906,018906,1.275829192420999,103.8495763886253,exact,found,Singapore Chinese Cultural Centre,True
+Nanyang Pho Leng Hui Kuan,museum_or_heritage_site,True,False,False,26 LORONG 27A GEYLANG PHO LENG BUILDING SINGAPORE 388115,388115,1.315044365469545,103.8851191649358,exact,found,388115,True
+Flock at Kampong Java - The Hall,studio_or_shop,False,False,False,,,,,,not_found,,False
+"The Art House, Chamber",performing_arts_venue,True,True,False,1 OLD PARLIAMENT LANE THE ARTS HOUSE AT THE OLD PARLIAMENT SINGAPORE 179429,179429,1.288646750724994,103.8510663055102,exact,found,The Art House,False
+"Drama Centre Theatre, National Library 100 Victoria St, #03-01, Singapore 188064",performing_arts_venue,True,True,False,100 VICTORIA STREET NATIONAL LIBRARY,NIL,1.2974897571723,103.853942295329,exact,found,National Library 100 Victoria St,False
+Esplanade Recital Studio,performing_arts_venue,True,False,True,1 ESPLANADE DRIVE DBS FOUNDATION OUTDOOR THEATRE SINGAPORE 038981,038981,1.288803050363472,103.8560035165919,exact,found,038981,True
+Esplanade Concert Hall,performing_arts_venue,True,True,True,1 ESPLANADE DRIVE ESPLANADE CONCERT HALL,NIL,1.28954364230007,103.8551710676731,exact,found,Esplanade Concert Hall,False
+"Singapore Chinese Cultural Centre Multi-Purpose Hall, Level 7 新加坡华族文化中心多功能礼堂，七楼",performing_arts_venue,True,False,False,1 STRAITS BOULEVARD SINGAPORE CHINESE CULTURAL CENTRE SINGAPORE 018906,018906,1.275829192420999,103.8495763886253,exact,found,Singapore Chinese Cultural Centre,True
+House of Tan Yeok Nee,museum_or_heritage_site,True,False,False,101 PENANG ROAD FORMER HOUSE OF TAN YEOK NEE,NIL,1.298627501311623,103.8433135292765,exact,found,House of Tan Yeok Nee,False
+Objectifs Centre for Photography and Film,arts_centre_or_gallery,True,True,False,155 MIDDLE ROAD SINGAPORE 188977,188977,1.299657559290592,103.8520805353488,exact,found,188977,True
+Bechstein Music World,studio_or_shop,True,False,False,7 SHENTON WAY SINGAPORE CONFERENCE HALL SINGAPORE 068810,068810,1.276165275399508,103.8490295942262,exact,found,068810,True
+Singapore Chinese Cultural Centre,performing_arts_venue,True,True,False,1 STRAITS BOULEVARD SINGAPORE CHINESE CULTURAL CENTRE SINGAPORE 018906,018906,1.275829192420999,103.8495763886253,exact,found,Singapore Chinese Cultural Centre,False
+The Theatre at Mediacorp,performing_arts_venue,True,False,False,1 STARS AVENUE MEDIACORP CAMPUS SINGAPORE 138507,138507,1.295558387857369,103.7922220064224,exact,found,138507,True
+The Artground @ GAC - WhiteBox,arts_centre_or_gallery,True,True,False,90 GOODMAN ROAD GOODMAN ARTS CENTRE SINGAPORE 439053,439053,1.304134516433747,103.8852719338577,exact,found,Goodman Arts Centre,True
+Victoria Concert Hall,performing_arts_venue,True,False,True,11 EMPRESS PLACE VICTORIA CONCERT HALL,NIL,1.288339926894556,103.8516522825005,exact,found,Victoria Concert Hall,False
+Victoria Theatre,performing_arts_venue,True,True,False,9 EMPRESS PLACE VICTORIA THEATRE,NIL,1.288378809867843,103.8516493109598,exact,found,Victoria Theatre,False
+Esplanade Theatre Studio (Level 4),performing_arts_venue,True,True,True,1 ESPLANADE DRIVE DBS FOUNDATION OUTDOOR THEATRE SINGAPORE 038981,038981,1.288803050363472,103.8560035165919,exact,found,038981,True
+"University Cultural Centre Ho Bee Auditorium, NUS",performing_arts_venue,True,True,False,50 KENT RIDGE CRESCENT UNIVERSITY CULTURAL CENTRE,NIL,1.301675043843601,103.7720081547379,exact,found,University Cultural Centre,True
+KC Arts Centre - Home of SRT,performing_arts_venue,True,True,True,20 MERBAU ROAD SINGAPORE REPERTORY THEATRE SINGAPORE 239035,239035,1.291397628483983,103.8417134599782,exact,found,239035,True
+Shop-House by DECK,arts_centre_or_gallery,True,True,False,120A PRINSEP STREET SINGAPORE 187937,187937,1.301687817206952,103.8517279652286,exact,found,187937,True
+"Sands Theatre, Marina Bay Sands",performing_arts_venue,True,True,True,4 BAYFRONT AVENUE MARINA BAY SANDS (MASTERCARD THEATRES) SINGAPORE 018973,018973,1.285229500900773,103.8600228378716,exact,found,"Sands Theatre, Marina Bay Sands",False
+Esplanade Theatre Studio,performing_arts_venue,True,True,True,1 ESPLANADE DRIVE DBS FOUNDATION OUTDOOR THEATRE SINGAPORE 038981,038981,1.288803050363472,103.8560035165919,exact,found,038981,True
+Singtel Waterfront Theatre at Esplanade,performing_arts_venue,True,False,False,1 ESPLANADE DRIVE DBS FOUNDATION OUTDOOR THEATRE SINGAPORE 038981,038981,1.288803050363472,103.8560035165919,exact,found,038981,True
+"The Ngee Ann Kongsi Theatre @ Wild Rice, Funan",performing_arts_venue,True,False,False,107 NORTH BRIDGE ROAD FUNAN SINGAPORE 179105,179105,1.291347596977954,103.8499897900843,exact,found,Funan,False
+"Play Den, The Arts House",performing_arts_venue,True,True,False,1 OLD PARLIAMENT LANE THE ARTS HOUSE AT THE OLD PARLIAMENT SINGAPORE 179429,179429,1.288646750724994,103.8510663055102,exact,found,The Arts House,False
+Xin Sheng Poets Society,museum_or_heritage_site,True,True,True,13 SMITH STREET SINGAPORE 058927,058927,1.28198632699112,103.844461286029,exact,found,058927,True
+Drama Centre Black Box,performing_arts_venue,True,True,False,100 VICTORIA STREET NATIONAL LIBRARY,NIL,1.2974897571723,103.853942295329,exact,found,National Library 100 Victoria St,True
+Capitol Theatre,performing_arts_venue,True,True,False,17 STAMFORD ROAD CAPITOL THEATRE SINGAPORE 178907,178907,1.293490405106754,103.8511959072952,exact,found,Capitol Theatre,False
+Eng Tiang Huat Chinese Cultural Shop,museum_or_heritage_site,True,False,False,10 LORONG 24A GEYLANG GEYLANG CONSERVATION AREA SINGAPORE 398534,398534,1.312802899643822,103.8838164773949,exact,found,398534,True
+"University Cultural Centre (Ho Bee Auditorium), National University of Singapore",performing_arts_venue,True,True,False,50 KENT RIDGE CRESCENT UNIVERSITY CULTURAL CENTRE,NIL,1.301675043843601,103.7720081547379,exact,found,University Cultural Centre,False
+Esplanade Theatre,performing_arts_venue,True,False,False,1 ESPLANADE DRIVE ESPLANADE THEATRE,NIL,1.289860000069936,103.8552779791975,exact,found,Esplanade Theatre,False
+Various Venues,unknown,,,,,,,,,not_a_place,,False
+Esplanade Black Room,performing_arts_venue,True,True,False,1 ESPLANADE DRIVE DBS FOUNDATION OUTDOOR THEATRE SINGAPORE 038981,038981,1.288803050363472,103.8560035165919,exact,found,038981,True

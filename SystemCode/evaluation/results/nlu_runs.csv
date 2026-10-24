@@ -1,0 +1,127 @@
+scenario,tier,mode,gold,extracted,tp,fp,fn,missed,extra,latency_ms
+T1-01,single,rules,1,1,1,0,0,[],[],14
+T1-01,single,llm,1,1,1,0,0,[],[],19516
+T1-01,single,hybrid,1,1,1,0,0,[],[],62662
+T1-02,single,rules,1,1,1,0,0,[],[],2
+T1-02,single,llm,1,1,1,0,0,[],[],11638
+T1-02,single,hybrid,1,1,1,0,0,[],[],72834
+T1-03,single,rules,1,1,1,0,0,[],[],1
+T1-03,single,llm,1,2,1,1,0,[],"[""('dates', '2026-09-11', '2026-09-11')""]",71772
+T1-03,single,hybrid,1,2,1,1,0,[],"[""('dates', '2026-09-11', '2026-09-11')""]",74953
+T1-04,single,rules,1,1,1,0,0,[],[],1
+T1-04,single,llm,1,4,0,4,1,"[""('budget', 20.0)""]","[""('budget', 10.0)"", ""('group_size', 3)"", ""('interest', 'dance performance')"", ""('interest', 'live music')""]",73325
+T1-04,single,hybrid,1,4,1,3,0,[],"[""('group_size', 3)"", ""('interest', 'dance performance')"", ""('interest', 'live music')""]",71786
+T1-05,single,rules,1,1,1,0,0,[],[],1
+T1-05,single,llm,1,4,0,4,1,"[""('dates', '2026-09-12', '2026-09-13')""]","[""('dates', 'None', '2026-09-12')"", ""('group_size', 3)"", ""('interest', 'dance performance')"", ""('interest', 'live music')""]",74585
+T1-05,single,hybrid,1,4,1,3,0,[],"[""('group_size', 3)"", ""('interest', 'dance performance')"", ""('interest', 'live music')""]",71563
+T1-06,single,rules,1,1,1,0,0,[],[],1
+T1-06,single,llm,1,0,0,0,1,"[""('interest', 'history and heritage')""]",[],120016
+T1-06,single,hybrid,1,1,1,0,0,[],[],29502
+T1-07,single,rules,1,1,1,0,0,[],[],2
+T1-07,single,llm,1,1,1,0,0,[],[],77364
+T1-07,single,hybrid,1,1,1,0,0,[],[],71571
+T1-08,single,rules,1,1,1,0,0,[],[],1
+T1-08,single,llm,1,8,1,7,0,[],"[""('age', 10)"", ""('budget', 50.0)"", ""('dates', '2026-09-11', '2026-09-11')"", ""('group_size', 3)"", ""('interest', 'history and heritage')"", ""('interest', 'live music')"", ""('language', 'lang_english')""]",79647
+T1-08,single,hybrid,1,8,1,7,0,[],"[""('age', 10)"", ""('budget', 50.0)"", ""('dates', '2026-09-11', '2026-09-11')"", ""('group_size', 3)"", ""('interest', 'history and heritage')"", ""('interest', 'live music')"", ""('language', 'lang_english')""]",80919
+T2-01,multi,rules,3,3,3,0,0,[],[],67
+T2-01,multi,llm,3,3,2,1,1,"[""('dates', '2026-09-12', '2026-09-13')""]","[""('dates', 'None', '2026-09-11')""]",79083
+T2-01,multi,hybrid,3,3,3,0,0,[],[],74869
+T2-02,multi,rules,3,3,3,0,0,[],[],3
+T2-02,multi,llm,3,3,3,0,0,[],[],72325
+T2-02,multi,hybrid,3,3,3,0,0,[],[],70989
+T2-03,multi,rules,4,4,4,0,0,[],[],3
+T2-03,multi,llm,4,4,3,1,1,"[""('dates', '2026-09-14', '2026-09-20')""]","[""('dates', '2026-09-18', '2026-09-18')""]",73873
+T2-03,multi,hybrid,4,4,4,0,0,[],[],73724
+T2-04,multi,rules,2,3,2,1,0,[],"[""('interest', 'chinese culture')""]",1
+T2-04,multi,llm,2,7,2,5,0,[],"[""('age', 10)"", ""('budget', 50.0)"", ""('group_size', 3)"", ""('interest', 'chinese culture')"", ""('region', 'Central')""]",74572
+T2-04,multi,hybrid,2,7,2,5,0,[],"[""('age', 10)"", ""('budget', 50.0)"", ""('group_size', 3)"", ""('interest', 'chinese culture')"", ""('region', 'Central')""]",73923
+T2-05,multi,rules,3,3,3,0,0,[],[],5
+T2-05,multi,llm,3,5,3,2,0,[],"[""('group_size', 3)"", ""('interest', 'pottery and clay')""]",72900
+T2-05,multi,hybrid,3,4,3,1,0,[],"[""('group_size', 3)""]",73751
+T2-06,multi,rules,3,3,3,0,0,[],[],1
+T2-06,multi,llm,3,3,2,1,1,"[""('dates', '2026-09-19', '2026-09-20')""]","[""('dates', '2026-09-16', '2026-09-17')""]",71515
+T2-06,multi,hybrid,3,3,3,0,0,[],[],72547
+T2-07,multi,rules,3,3,3,0,0,[],[],2
+T2-07,multi,llm,3,6,2,4,1,"[""('dates', '2026-09-11', '2026-09-30')""]","[""('dates', 'None', '2026-09-30')"", ""('interest', 'live music')"", ""('interest', 'opera')"", ""('interest', 'pop and contemporary music')""]",73071
+T2-07,multi,hybrid,3,6,3,3,0,[],"[""('interest', 'live music')"", ""('interest', 'opera')"", ""('interest', 'pop and contemporary music')""]",71056
+T2-08,multi,rules,2,2,2,0,0,[],[],1
+T2-08,multi,llm,2,4,1,3,1,"[""('interest', 'drawing')""]","[""('dates', '2026-09-11', '2026-09-11')"", ""('group_size', 3)"", ""('interest', 'painting')""]",72044
+T2-08,multi,hybrid,2,4,2,2,0,[],"[""('dates', '2026-09-11', '2026-09-11')"", ""('group_size', 3)""]",72846
+T2-09,multi,rules,3,3,3,0,0,[],[],1
+T2-09,multi,llm,3,9,2,7,1,"[""('dates', '2026-09-11', '2026-12-24')""]","[""('age', 10)"", ""('budget', 50.0)"", ""('dates', '2026-11-01', '2026-12-25')"", ""('group_size', 3)"", ""('interest', 'classical music')"", ""('language', 'lang_english')"", ""('region', 'Central')""]",72920
+T2-09,multi,hybrid,3,8,3,5,0,[],"[""('age', 10)"", ""('budget', 50.0)"", ""('group_size', 3)"", ""('language', 'lang_english')"", ""('region', 'Central')""]",73947
+T2-10,multi,rules,2,2,2,0,0,[],[],1
+T2-10,multi,llm,2,7,2,5,0,[],"[""('age', 10)"", ""('budget', 50.0)"", ""('dates', '2026-09-11', '2026-09-11')"", ""('group_size', 3)"", ""('language', 'lang_english')""]",72233
+T2-10,multi,hybrid,2,7,2,5,0,[],"[""('age', 10)"", ""('budget', 50.0)"", ""('dates', '2026-09-11', '2026-09-11')"", ""('group_size', 3)"", ""('language', 'lang_english')""]",76487
+T3-01,group,rules,4,4,4,0,0,[],[],4
+T3-01,group,llm,4,6,3,3,1,"[""('dates', '2026-09-12', '2026-09-13')""]","[""('dates', 'None', '2026-09-11')"", ""('interest', 'kids and family')"", ""('interest', 'live music')""]",78735
+T3-01,group,hybrid,4,6,4,2,0,[],"[""('interest', 'kids and family')"", ""('interest', 'live music')""]",71892
+T3-02,group,rules,4,4,4,0,0,[],[],2
+T3-02,group,llm,4,4,3,1,1,"[""('interest', 'live music')""]","[""('interest', 'classical music')""]",74776
+T3-02,group,hybrid,4,4,4,0,0,[],[],72888
+T3-03,group,rules,2,2,2,0,0,[],[],3
+T3-03,group,llm,2,4,1,3,1,"[""('dates', '2026-09-19', '2026-09-19')""]","[""('dates', '2026-09-11', '2026-09-17')"", ""('interest', 'live music')"", ""('interest', 'opera')""]",72696
+T3-03,group,hybrid,2,4,2,2,0,[],"[""('interest', 'live music')"", ""('interest', 'opera')""]",73380
+T3-04,group,rules,4,4,4,0,0,[],[],3
+T3-04,group,llm,4,26,2,24,2,"[""('budget', 25.0)"", ""('group_size', 4)""]","[""('budget', 100.0)"", ""('excluded', 'ballet')"", ""('excluded', 'choral and singing')"", ""('excluded', 'classical music')"", ""('excluded', 'comedy')"", ""('excluded', 'crafts')"", ""('excluded', 'dance performance')"", ""('excluded', 'digital art')"", ""('excluded', 'drama and theatre')"", ""('excluded', 'drawing')"", ""('excluded', 'learning an instrument')"", ""('excluded', 'musicals')"", ""('excluded', 'opera')"", ""('excluded', 'painting')"", ""('excluded', 'photography')"", ""('excluded', 'pop and contemporary music')"", ""('excluded', 'pottery and clay')"", ""('group_size', 5)"", ""('interest', 'chinese culture')"", ""('interest', 'history and heritage')"", ""('interest', 'indian culture')"", ""('interest', 'literature')"", ""('interest', 'malay culture')"", ""('interest', 'nature')""]",76697
+T3-04,group,hybrid,4,10,4,6,0,[],"[""('interest', 'chinese culture')"", ""('interest', 'history and heritage')"", ""('interest', 'indian culture')"", ""('interest', 'literature')"", ""('interest', 'malay culture')"", ""('interest', 'nature')""]",77992
+T3-05,group,rules,3,3,3,0,0,[],[],3
+T3-05,group,llm,3,3,2,1,1,"[""('group_size', 2)""]","[""('group_size', 3)""]",80552
+T3-05,group,hybrid,3,3,3,0,0,[],[],76239
+T3-06,group,rules,3,3,3,0,0,[],[],1
+T3-06,group,llm,3,5,1,4,2,"[""('category', 'Visual Arts')"", ""('group_size', 2)""]","[""('group_size', 3)"", ""('interest', 'drawing')"", ""('interest', 'painting')"", ""('interest', 'pottery and clay')""]",76762
+T3-06,group,hybrid,3,3,3,0,0,[],[],73640
+T3-07,group,rules,2,2,2,0,0,[],[],2
+T3-07,group,llm,2,2,2,0,0,[],[],71563
+T3-07,group,hybrid,2,2,2,0,0,[],[],71009
+T3-08,group,rules,3,3,3,0,0,[],[],2
+T3-08,group,llm,3,7,2,5,1,"[""('group_size', 6)""]","[""('group_size', 7)"", ""('interest', 'comedy')"", ""('interest', 'drama and theatre')"", ""('interest', 'live music')"", ""('interest', 'pop and contemporary music')""]",75052
+T3-08,group,hybrid,3,7,3,4,0,[],"[""('interest', 'comedy')"", ""('interest', 'drama and theatre')"", ""('interest', 'live music')"", ""('interest', 'pop and contemporary music')""]",78323
+T3-09,group,rules,4,4,4,0,0,[],[],1
+T3-09,group,llm,4,5,4,1,0,[],"[""('interest', 'musicals')""]",74874
+T3-09,group,hybrid,4,4,4,0,0,[],[],70985
+T3-10,group,rules,4,4,4,0,0,[],[],1
+T3-10,group,llm,4,4,4,0,0,[],[],72537
+T3-10,group,hybrid,4,4,4,0,0,[],[],65566
+T4-01,itinerary,rules,4,4,4,0,0,[],[],2
+T4-01,itinerary,llm,4,7,3,4,1,"[""('dates', '2026-09-12', '2026-09-12')""]","[""('age', 10)"", ""('dates', 'None', '2026-09-12')"", ""('group_size', 4)"", ""('language', 'lang_english')""]",5743
+T4-01,itinerary,hybrid,4,7,4,3,0,[],"[""('age', 10)"", ""('group_size', 4)"", ""('language', 'lang_english')""]",5680
+T4-02,itinerary,rules,4,4,4,0,0,[],[],1
+T4-02,itinerary,llm,4,6,3,3,1,"[""('dates', '2026-09-13', '2026-09-13')""]","[""('dates', '2026-09-11', '2026-09-11')"", ""('interest', 'dance performance')"", ""('interest', 'live music')""]",5010
+T4-02,itinerary,hybrid,4,6,4,2,0,[],"[""('interest', 'dance performance')"", ""('interest', 'live music')""]",4852
+T4-03,itinerary,rules,4,5,4,1,0,[],"[""('category', 'Music')""]",1
+T4-03,itinerary,llm,4,5,2,3,2,"[""('category', 'Visual Arts')"", ""('dates', '2026-09-19', '2026-09-19')""]","[""('dates', '2026-09-17', '2026-09-17')"", ""('interest', 'drawing')"", ""('interest', 'painting')""]",5506
+T4-03,itinerary,hybrid,4,5,4,1,0,[],"[""('category', 'Music')""]",5389
+T4-04,itinerary,rules,3,3,3,0,0,[],[],96
+T4-04,itinerary,llm,3,6,3,3,0,[],"[""('age', 10)"", ""('budget', 50.0)"", ""('group_size', 3)""]",5285
+T4-04,itinerary,hybrid,3,6,3,3,0,[],"[""('age', 10)"", ""('budget', 50.0)"", ""('group_size', 3)""]",5017
+T4-05,itinerary,rules,3,3,3,0,0,[],[],3
+T4-05,itinerary,llm,3,9,3,6,0,[],"[""('age', 10)"", ""('group_size', 3)"", ""('interest', 'chinese culture')"", ""('interest', 'food heritage')"", ""('interest', 'peranakan culture')"", ""('language', 'lang_mandarin')""]",5784
+T4-05,itinerary,hybrid,3,6,3,3,0,[],"[""('age', 10)"", ""('group_size', 3)"", ""('language', 'lang_mandarin')""]",5632
+T5-01,underspecified,rules,1,1,1,0,0,[],[],1
+T5-01,underspecified,llm,1,2,1,1,0,[],"[""('interest', 'kids and family')""]",4356
+T5-01,underspecified,hybrid,1,2,1,1,0,[],"[""('interest', 'kids and family')""]",4141
+T5-02,underspecified,rules,1,0,0,0,1,"[""('group_size', 2)""]",[],1
+T5-02,underspecified,llm,1,4,1,3,0,[],"[""('interest', 'drama and theatre')"", ""('interest', 'live music')"", ""('interest', 'musicals')""]",4116
+T5-02,underspecified,hybrid,1,4,1,3,0,[],"[""('interest', 'drama and theatre')"", ""('interest', 'live music')"", ""('interest', 'musicals')""]",4115
+T5-03,underspecified,rules,1,0,0,0,1,"[""('category', 'Visual Arts')""]",[],1
+T5-03,underspecified,llm,1,6,0,6,1,"[""('category', 'Visual Arts')""]","[""('dates', '2026-09-11', '2026-09-11')"", ""('group_size', 3)"", ""('interest', 'dance performance')"", ""('interest', 'drawing')"", ""('interest', 'painting')"", ""('interest', 'pottery and clay')""]",5016
+T5-03,underspecified,hybrid,1,6,0,6,1,"[""('category', 'Visual Arts')""]","[""('dates', '2026-09-11', '2026-09-11')"", ""('group_size', 3)"", ""('interest', 'dance performance')"", ""('interest', 'drawing')"", ""('interest', 'painting')"", ""('interest', 'pottery and clay')""]",4918
+T5-04,underspecified,rules,1,1,1,0,0,[],[],0
+T5-04,underspecified,llm,1,4,0,4,1,"[""('dates', '2026-09-11', '2026-09-30')""]","[""('dates', 'None', '2026-09-30')"", ""('interest', 'dance performance')"", ""('interest', 'live music')"", ""('interest', 'musicals')""]",3961
+T5-04,underspecified,hybrid,1,4,1,3,0,[],"[""('interest', 'dance performance')"", ""('interest', 'live music')"", ""('interest', 'musicals')""]",3916
+T5-05,underspecified,rules,1,0,0,0,1,"[""('group_size', 3)""]",[],0
+T5-05,underspecified,llm,1,0,0,0,1,"[""('group_size', 3)""]",[],3605
+T5-05,underspecified,hybrid,1,0,0,0,1,"[""('group_size', 3)""]",[],3499
+T5-06,underspecified,rules,1,1,1,0,0,[],[],0
+T5-06,underspecified,llm,1,3,0,3,1,"[""('dates', '2026-09-12', '2026-09-13')""]","[""('dates', 'None', '2026-09-12')"", ""('interest', 'dance performance')"", ""('interest', 'live music')""]",4012
+T5-06,underspecified,hybrid,1,3,1,2,0,[],"[""('interest', 'dance performance')"", ""('interest', 'live music')""]",3925
+T6-01,impossible,rules,3,3,3,0,0,[],[],0
+T6-01,impossible,llm,3,2,2,0,1,"[""('budget', 0.0)""]",[],4225
+T6-01,impossible,hybrid,3,3,3,0,0,[],[],4101
+T6-02,impossible,rules,5,5,5,0,0,[],[],1
+T6-02,impossible,llm,5,7,4,3,1,"[""('dates', '2026-09-12', '2026-09-13')""]","[""('dates', 'None', '2026-09-11')"", ""('group_size', 3)"", ""('region', 'Central')""]",4961
+T6-02,impossible,hybrid,5,5,3,2,2,"[""('need', 'ca_sign_language')"", ""('need', 'va_wheelchair')""]","[""('group_size', 3)"", ""('region', 'Central')""]",4998
+T6-03,impossible,rules,2,2,2,0,0,[],[],1
+T6-03,impossible,llm,2,2,0,2,2,"[""('category', 'Films')"", ""('dates', '2026-09-11', '2026-09-30')""]","[""('dates', 'None', '2026-09-30')"", ""('interest', 'live music')""]",3896
+T6-03,impossible,hybrid,2,2,2,0,0,[],[],3769

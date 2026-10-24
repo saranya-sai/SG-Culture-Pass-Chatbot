@@ -1,0 +1,1525 @@
+{
+ "reference_date": "2026-09-11",
+ "scenarios": [
+  {
+   "id": "T1-01",
+   "tier": "single",
+   "message": "Any pottery workshops?",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [
+     "pottery and clay"
+    ],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "interests"
+   ]
+  },
+  {
+   "id": "T1-02",
+   "tier": "single",
+   "message": "I want to watch a dance performance",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [
+     "dance performance"
+    ],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "interests"
+   ]
+  },
+  {
+   "id": "T1-03",
+   "tier": "single",
+   "message": "What classical music concerts are on?",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [
+     "classical music"
+    ],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "interests"
+   ]
+  },
+  {
+   "id": "T1-04",
+   "tier": "single",
+   "message": "Anything under $20?",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": null,
+    "day_type": null,
+    "budget_pp": 20,
+    "interests": [],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "budget"
+   ]
+  },
+  {
+   "id": "T1-05",
+   "tier": "single",
+   "message": "What's on this weekend?",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": "2026-09-12",
+    "date_to": "2026-09-13",
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "dates"
+   ]
+  },
+  {
+   "id": "T1-06",
+   "tier": "single",
+   "message": "Show me heritage tours",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [
+     "history and heritage"
+    ],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "interests"
+   ]
+  },
+  {
+   "id": "T1-07",
+   "tier": "single",
+   "message": "Any events in Mandarin?",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [
+     "lang_mandarin"
+    ],
+    "excluded": []
+   },
+   "basis": "rule",
+   "message_slots": [
+    "languages"
+   ]
+  },
+  {
+   "id": "T1-08",
+   "tier": "single",
+   "message": "Something in the east",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [],
+    "categories": [],
+    "region": "East",
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "location"
+   ]
+  },
+  {
+   "id": "T2-01",
+   "tier": "multi",
+   "message": "Painting workshop this weekend under $70",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": "2026-09-12",
+    "date_to": "2026-09-13",
+    "day": null,
+    "day_type": null,
+    "budget_pp": 70,
+    "interests": [
+     "painting"
+    ],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "interests",
+    "dates",
+    "budget"
+   ]
+  },
+  {
+   "id": "T2-02",
+   "tier": "multi",
+   "message": "Classical concert in October below $40",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": "2026-10-01",
+    "date_to": "2026-10-31",
+    "day": null,
+    "day_type": null,
+    "budget_pp": 40,
+    "interests": [
+     "classical music"
+    ],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "interests",
+    "dates",
+    "budget"
+   ]
+  },
+  {
+   "id": "T2-03",
+   "tier": "multi",
+   "message": "Heritage or food tour next week for under $50",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": "2026-09-14",
+    "date_to": "2026-09-20",
+    "day": null,
+    "day_type": null,
+    "budget_pp": 50,
+    "interests": [
+     "history and heritage",
+     "food heritage"
+    ],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "interests",
+    "dates",
+    "budget"
+   ]
+  },
+  {
+   "id": "T2-04",
+   "tier": "multi",
+   "message": "A Chinese-language show in October",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": "2026-10-01",
+    "date_to": "2026-10-31",
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [
+     "lang_mandarin"
+    ],
+    "excluded": []
+   },
+   "basis": "rule",
+   "message_slots": [
+    "languages",
+    "dates"
+   ]
+  },
+  {
+   "id": "T2-05",
+   "tier": "multi",
+   "message": "Hands-on craft class near Geylang, under $60",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": null,
+    "day_type": null,
+    "budget_pp": 60,
+    "interests": [
+     "crafts"
+    ],
+    "categories": [],
+    "region": null,
+    "location": "geylang",
+    "near": true,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "interests",
+    "location",
+    "budget"
+   ]
+  },
+  {
+   "id": "T2-06",
+   "tier": "multi",
+   "message": "Dance or theatre next weekend",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": "2026-09-19",
+    "date_to": "2026-09-20",
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [
+     "dance performance",
+     "drama and theatre"
+    ],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "interests",
+    "dates"
+   ]
+  },
+  {
+   "id": "T2-07",
+   "tier": "multi",
+   "message": "Anything in the west this month under $30",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": "2026-09-11",
+    "date_to": "2026-09-30",
+    "day": null,
+    "day_type": null,
+    "budget_pp": 30,
+    "interests": [],
+    "categories": [],
+    "region": "West",
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "location",
+    "dates",
+    "budget"
+   ]
+  },
+  {
+   "id": "T2-08",
+   "tier": "multi",
+   "message": "Drawing class on a weekday, under $50",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": null,
+    "day_type": "weekday",
+    "budget_pp": 50,
+    "interests": [
+     "drawing"
+    ],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "interests",
+    "budget"
+   ]
+  },
+  {
+   "id": "T2-09",
+   "tier": "multi",
+   "message": "Opera or choir concert before Christmas",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": "2026-09-11",
+    "date_to": "2026-12-24",
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [
+     "opera",
+     "choral and singing"
+    ],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "interests",
+    "dates"
+   ]
+  },
+  {
+   "id": "T2-10",
+   "tier": "multi",
+   "message": "Peranakan culture experience in the east",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [
+     "peranakan culture"
+    ],
+    "categories": [],
+    "region": "East",
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "interests",
+    "location"
+   ]
+  },
+  {
+   "id": "T3-01",
+   "tier": "group",
+   "message": "Something for me and my 2 kids (5 and 8) this weekend",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "child",
+      "age": 5,
+      "needs": []
+     },
+     {
+      "role": "child",
+      "age": 8,
+      "needs": []
+     }
+    ],
+    "date_from": "2026-09-12",
+    "date_to": "2026-09-13",
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "synthetic",
+   "message_slots": [
+    "group",
+    "dates"
+   ]
+  },
+  {
+   "id": "T3-02",
+   "tier": "group",
+   "message": "A concert my grandma would enjoy, she uses a wheelchair",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "grandparent",
+      "age": 75,
+      "needs": [
+       "va_wheelchair"
+      ]
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [
+     "live music"
+    ],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "synthetic",
+   "message_slots": [
+    "group",
+    "needs",
+    "interests"
+   ]
+  },
+  {
+   "id": "T3-03",
+   "tier": "group",
+   "message": "Date night with my wife next Saturday",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "partner",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": "2026-09-19",
+    "date_to": "2026-09-19",
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "synthetic",
+   "message_slots": [
+    "group",
+    "dates"
+   ]
+  },
+  {
+   "id": "T3-04",
+   "tier": "group",
+   "message": "Family of 4 with a 10-year-old, $100 total, anything but concerts",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "companion",
+      "age": 35,
+      "needs": []
+     },
+     {
+      "role": "companion",
+      "age": 40,
+      "needs": []
+     },
+     {
+      "role": "child",
+      "age": 10,
+      "needs": []
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": null,
+    "day_type": null,
+    "budget_pp": 25,
+    "interests": [],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": [
+     "live music"
+    ]
+   },
+   "basis": "synthetic",
+   "message_slots": [
+    "group",
+    "budget",
+    "excluded"
+   ]
+  },
+  {
+   "id": "T3-05",
+   "tier": "group",
+   "message": "Me and my 15-year-old son, he loves comedy",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "teen",
+      "age": 15,
+      "needs": []
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [
+     "comedy"
+    ],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "synthetic",
+   "message_slots": [
+    "group",
+    "interests"
+   ]
+  },
+  {
+   "id": "T3-06",
+   "tier": "group",
+   "message": "An art workshop for me and my 70-year-old mum",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "parent",
+      "age": 70,
+      "needs": []
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [],
+    "categories": [
+     "Visual Arts"
+    ],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "synthetic",
+   "message_slots": [
+    "group",
+    "interests"
+   ]
+  },
+  {
+   "id": "T3-07",
+   "tier": "group",
+   "message": "My friend is deaf, any shows with captions?",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "friend",
+      "age": 30,
+      "needs": [
+       "ca_captioning"
+      ]
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "synthetic",
+   "message_slots": [
+    "group",
+    "needs"
+   ]
+  },
+  {
+   "id": "T3-08",
+   "tier": "group",
+   "message": "Group of 6 friends, night out in October, under $50",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "friend",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "friend",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "friend",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "friend",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "friend",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": "2026-10-01",
+    "date_to": "2026-10-31",
+    "day": null,
+    "day_type": null,
+    "budget_pp": 50,
+    "interests": [],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "group",
+    "dates",
+    "budget"
+   ]
+  },
+  {
+   "id": "T3-09",
+   "tier": "group",
+   "message": "Kids aged 4 and 6, something musical for them",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "child",
+      "age": 4,
+      "needs": []
+     },
+     {
+      "role": "child",
+      "age": 6,
+      "needs": []
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [
+     "live music"
+    ],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "synthetic",
+   "message_slots": [
+    "group",
+    "interests"
+   ]
+  },
+  {
+   "id": "T3-10",
+   "tier": "group",
+   "message": "My mum only understands Mandarin, something about Chinese culture next month",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "parent",
+      "age": 60,
+      "needs": []
+     }
+    ],
+    "date_from": "2026-10-01",
+    "date_to": "2026-10-31",
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [
+     "chinese culture"
+    ],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [
+     "lang_mandarin"
+    ],
+    "excluded": []
+   },
+   "basis": "rule",
+   "message_slots": [
+    "group",
+    "languages",
+    "interests",
+    "dates"
+   ]
+  },
+  {
+   "id": "T4-01",
+   "tier": "itinerary",
+   "message": "Plan my Saturday near Bugis: painting and heritage, 3 things",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": "2026-09-12",
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [
+     "painting",
+     "history and heritage"
+    ],
+    "categories": [],
+    "region": null,
+    "location": "bugis",
+    "near": true,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "interests",
+    "dates",
+    "location"
+   ]
+  },
+  {
+   "id": "T4-02",
+   "tier": "itinerary",
+   "message": "Plan a Sunday out with my kids (7 and 9)",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "child",
+      "age": 7,
+      "needs": []
+     },
+     {
+      "role": "child",
+      "age": 9,
+      "needs": []
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": "2026-09-13",
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "synthetic",
+   "message_slots": [
+    "group",
+    "dates"
+   ]
+  },
+  {
+   "id": "T4-03",
+   "tier": "itinerary",
+   "message": "Plan next Saturday for me and my partner: classical music and art",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "partner",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": "2026-09-19",
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [
+     "classical music"
+    ],
+    "categories": [
+     "Visual Arts"
+    ],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "synthetic",
+   "message_slots": [
+    "group",
+    "interests",
+    "dates"
+   ]
+  },
+  {
+   "id": "T4-04",
+   "tier": "itinerary",
+   "message": "Plan a day out on 26 Sep, I love crafts and food",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": "2026-09-26",
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [
+     "crafts",
+     "food heritage"
+    ],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "interests",
+    "dates"
+   ]
+  },
+  {
+   "id": "T4-05",
+   "tier": "itinerary",
+   "message": "Plan a heritage day on 3 Oct near Chinatown",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": "2026-10-03",
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [
+     "history and heritage"
+    ],
+    "categories": [],
+    "region": null,
+    "location": "chinatown",
+    "near": true,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "interests",
+    "dates",
+    "location"
+   ]
+  },
+  {
+   "id": "T5-01",
+   "tier": "underspecified",
+   "message": "Something to do with my kids",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "child",
+      "age": 4,
+      "needs": []
+     },
+     {
+      "role": "child",
+      "age": 6,
+      "needs": []
+     }
+    ],
+    "date_from": "2026-09-12",
+    "date_to": "2026-09-13",
+    "day": null,
+    "day_type": null,
+    "budget_pp": 30,
+    "interests": [],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "synthetic",
+   "message_slots": [
+    "group"
+   ]
+  },
+  {
+   "id": "T5-02",
+   "tier": "underspecified",
+   "message": "Suggest something nice for a date",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "partner",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": "2026-09-18",
+    "date_to": "2026-09-19",
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [
+     "classical music"
+    ],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "synthetic",
+   "message_slots": [
+    "group"
+   ]
+  },
+  {
+   "id": "T5-03",
+   "tier": "underspecified",
+   "message": "I want to try a workshop",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": null,
+    "date_to": null,
+    "day": null,
+    "day_type": null,
+    "budget_pp": 50,
+    "interests": [],
+    "categories": [
+     "Visual Arts"
+    ],
+    "region": "East",
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "interests"
+   ]
+  },
+  {
+   "id": "T5-04",
+   "tier": "underspecified",
+   "message": "Anything fun this month?",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "grandparent",
+      "age": 72,
+      "needs": []
+     }
+    ],
+    "date_from": "2026-09-11",
+    "date_to": "2026-09-30",
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [],
+    "categories": [
+     "Music"
+    ],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "synthetic",
+   "message_slots": [
+    "dates"
+   ]
+  },
+  {
+   "id": "T5-05",
+   "tier": "underspecified",
+   "message": "Looking for something for my family",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "child",
+      "age": 10,
+      "needs": []
+     },
+     {
+      "role": "child",
+      "age": 12,
+      "needs": []
+     }
+    ],
+    "date_from": "2026-09-19",
+    "date_to": "2026-09-20",
+    "day": null,
+    "day_type": null,
+    "budget_pp": 25,
+    "interests": [],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "synthetic",
+   "message_slots": [
+    "group"
+   ]
+  },
+  {
+   "id": "T5-06",
+   "tier": "underspecified",
+   "message": "What can I do near me this weekend?",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": "2026-09-12",
+    "date_to": "2026-09-13",
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [],
+    "categories": [],
+    "region": null,
+    "location": "tampines",
+    "near": true,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "dates"
+   ]
+  },
+  {
+   "id": "T6-01",
+   "tier": "impossible",
+   "message": "A free ballet show tonight",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": "2026-09-11",
+    "date_to": "2026-09-11",
+    "day": null,
+    "day_type": null,
+    "budget_pp": 0,
+    "interests": [
+     "ballet"
+    ],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "interests",
+    "budget",
+    "dates"
+   ]
+  },
+  {
+   "id": "T6-02",
+   "tier": "impossible",
+   "message": "Wheelchair-accessible theatre with sign language interpretation under $15 this weekend",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     },
+     {
+      "role": "friend",
+      "age": 30,
+      "needs": [
+       "va_wheelchair",
+       "ca_sign_language"
+      ]
+     }
+    ],
+    "date_from": "2026-09-12",
+    "date_to": "2026-09-13",
+    "day": null,
+    "day_type": null,
+    "budget_pp": 15,
+    "interests": [
+     "drama and theatre"
+    ],
+    "categories": [],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "synthetic",
+   "message_slots": [
+    "needs",
+    "interests",
+    "budget",
+    "dates"
+   ]
+  },
+  {
+   "id": "T6-03",
+   "tier": "impossible",
+   "message": "Any film screenings this month?",
+   "profile": {
+    "members": [
+     {
+      "role": "me",
+      "age": 30,
+      "needs": []
+     }
+    ],
+    "date_from": "2026-09-11",
+    "date_to": "2026-09-30",
+    "day": null,
+    "day_type": null,
+    "budget_pp": null,
+    "interests": [],
+    "categories": [
+     "Films"
+    ],
+    "region": null,
+    "location": null,
+    "near": false,
+    "languages": [],
+    "excluded": []
+   },
+   "basis": "real",
+   "message_slots": [
+    "interests",
+    "dates"
+   ]
+  }
+ ]
+}

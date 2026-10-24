@@ -1,0 +1,295 @@
+scenario,tier,basis,returned,min_member_fit@k,P@k,R@k,nDCG@k,violation@k,undisclosed_violations,gold_relevant,ids,system,turns,questions,latency_ms,flagged_relaxation,itinerary
+T1-01,single,real,5,,1.0,1.0,1.0,0.0,0,5,"[151060, 135049, 140613, 151065, 140615]",chatbot:full,1,,89,False,False
+T1-02,single,real,5,,1.0,1.0,1.0,0.0,0,10,"[169008, 160953, 161833, 169396, 169880]",chatbot:full,2,dates=no preference,6359,False,False
+T1-03,single,real,5,,1.0,1.0,1.0,0.0,0,41,"[154768, 155132, 156272, 154796, 155124]",chatbot:full,3,dates=no preference; group=Just me,334,False,False
+T1-04,single,real,5,,1.0,1.0,1.0,0.0,0,37,"[17383, 169838, 154275, 154768, 156272]",chatbot:full,1,,25,False,False
+T1-05,single,real,5,,1.0,1.0,1.0,0.0,0,66,"[157057, 169008, 161788, 168332, 135049]",chatbot:full,3,group=Just me; budget=No limit,246,False,False
+T1-06,single,real,5,,1.0,1.0,1.0,0.0,0,13,"[134223, 157057, 17383, 154205, 134395]",chatbot:full,2,group=Just me,190,False,False
+T1-07,single,rule,5,,1.0,1.0,1.0,0.0,0,12,"[168614, 154275, 169836, 169559, 169880]",chatbot:full,1,,2,False,False
+T1-08,single,real,5,,1.0,1.0,1.0,0.0,0,13,"[134223, 149028, 154625, 152347, 154620]",chatbot:full,1,,36,False,False
+T2-01,multi,real,5,,1.0,1.0,1.0,0.0,0,15,"[169856, 156997, 151905, 169862, 156992]",chatbot:full,1,,23,False,False
+T2-02,multi,real,5,,1.0,1.0,1.0,0.0,0,6,"[155131, 168551, 168316, 169131, 155132]",chatbot:full,1,,17,False,False
+T2-03,multi,real,5,,1.0,1.0,1.0,0.0,0,6,"[149588, 17383, 134223, 131859, 157057]",chatbot:full,1,,43,False,False
+T2-04,multi,rule,5,,1.0,1.0,1.0,0.0,0,6,"[154275, 169559, 170050, 170061, 169711]",chatbot:full,1,,2,False,False
+T2-05,multi,real,5,,0.8,1.0,1.0,0.0,0,4,"[169862, 133679, 169838, 161237, 169856]",chatbot:full,1,,46,False,False
+T2-06,multi,real,5,,0.2,1.0,1.0,0.0,0,1,"[169880, 134223, 154768, 169838, 149028]",chatbot:full,1,,42,False,False
+T2-07,multi,real,5,,0.2,1.0,1.0,0.8,0,1,"[17383, 154768, 169838, 134223, 169008]",chatbot:full,1,,7,True,False
+T2-08,multi,real,5,,1.0,1.0,1.0,0.0,0,5,"[149028, 154620, 134893, 148984, 149022]",chatbot:full,1,,22,False,False
+T2-09,multi,real,5,,1.0,1.0,1.0,0.0,0,13,"[156796, 169176, 154275, 170050, 160939]",chatbot:full,1,,63,False,False
+T2-10,multi,real,5,,1.0,1.0,1.0,0.0,0,5,"[134223, 134057, 136331, 151065, 135055]",chatbot:full,1,,48,False,False
+T3-01,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,43,"[169008, 157057, 161788, 154620, 169856]",chatbot:full,1,,28,False,False
+T3-02,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,55,"[156796, 154768, 157011, 169836, 155113]",chatbot:full,2,dates=no preference,58,False,False
+T3-03,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,63,"[17383, 154768, 149588, 149028, 156997]",chatbot:full,1,,35,False,False
+T3-04,group,synthetic,5,0.6,1.0,1.0,1.0,0.0,0,9,"[169838, 169008, 17383, 169176, 165117]",chatbot:full,1,,3,False,False
+T3-05,group,synthetic,5,0.2,0.6,1.0,1.0,0.0,0,3,"[168614, 170061, 169711, 169588, 168905]",chatbot:full,2,dates=no preference,203,False,False
+T3-06,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,43,"[154620, 169856, 138695, 140613, 155331]",chatbot:full,1,,71,False,False
+T3-07,group,synthetic,5,,1.0,1.0,1.0,0.0,0,6,"[168608, 168316, 154785, 169925, 155092]",chatbot:full,1,,22,False,False
+T3-08,group,real,5,,1.0,1.0,1.0,0.0,0,31,"[154275, 160953, 168608, 170497, 133679]",chatbot:full,2,interests=Surprise me,29,False,False
+T3-09,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,50,"[169963, 154768, 169836, 161788, 169560]",chatbot:full,2,dates=no preference,118,False,False
+T3-10,group,rule,5,,1.0,1.0,1.0,0.0,0,6,"[154275, 169559, 170050, 170061, 169711]",chatbot:full,1,,2,False,False
+T4-01,itinerary,real,3,,1.0,1.0,1.0,0.0,0,26,"[156997, 157057, 17383]",chatbot:full,1,,10,False,True
+T4-02,itinerary,synthetic,3,1.0,1.0,1.0,1.0,0.0,0,56,"[169856, 157057, 169008]",chatbot:full,1,,8,False,True
+T4-03,itinerary,synthetic,3,1.0,1.0,1.0,1.0,0.0,0,42,"[134893, 154768, 156272]",chatbot:full,1,,9,False,True
+T4-04,itinerary,real,2,,0.6666666666666666,0.6666666666666666,0.7653606369886218,0.0,0,15,"[133679, 134223]",chatbot:full,1,,34,False,True
+T4-05,itinerary,real,3,,0.6666666666666666,0.6666666666666666,0.7653606369886218,0.0,0,5,"[134395, 157057, 154275]",chatbot:full,1,,18,False,True
+T5-01,underspecified,synthetic,5,1.0,0.2,0.25,0.3903800499921017,0.8,4,4,"[169008, 156796, 169838, 157057, 154620]",chatbot:full,2,interests=Surprise me,156,False,False
+T5-02,underspecified,synthetic,5,1.0,0.4,1.0,0.8884862264047996,0.2,1,2,"[154768, 161227, 156272, 169638, 134399]",chatbot:full,3,interests=Music; dates=Next 2 weeks,158,False,False
+T5-03,underspecified,real,5,,0.0,0.0,0.0,0.8,4,4,"[134223, 168316, 161227, 169856, 134893]",chatbot:full,4,group=Just me; dates=no preference; budget=Up to $50,244,False,False
+T5-04,underspecified,synthetic,5,0.4,1.0,1.0,1.0,0.0,0,17,"[156796, 161227, 154768, 156272, 154275]",chatbot:full,2,interests=Music,72,False,False
+T5-05,underspecified,synthetic,5,1.0,0.2,0.2,0.16958010263680806,0.8,4,5,"[169008, 156796, 169838, 157057, 154620]",chatbot:full,3,group=With kids; interests=Surprise me,135,False,False
+T5-06,underspecified,real,5,,1.0,1.0,1.0,0.0,0,20,"[134223, 168614, 154620, 152347, 169856]",chatbot:full,2,location=tampines,15,False,False
+T6-01,impossible,real,0,,,,,,0,0,[],chatbot:full,1,,1,False,False
+T6-02,impossible,synthetic,0,,,,,,0,0,[],chatbot:full,1,,25,False,False
+T6-03,impossible,real,5,,,,,1.0,0,0,"[169836, 169008, 168332, 168614, 134223]",chatbot:full,3,group=Just me; budget=No limit,115,True,False
+T1-01,single,real,5,,1.0,1.0,1.0,0.0,0,5,"[151060, 135049, 140613, 151065, 140615]",chatbot:no_clarification,1,,5,False,False
+T1-02,single,real,5,,1.0,1.0,1.0,0.0,0,10,"[169008, 160953, 161833, 169396, 169880]",chatbot:no_clarification,1,,21,False,False
+T1-03,single,real,5,,1.0,1.0,1.0,0.0,0,41,"[154768, 155132, 156272, 154796, 155124]",chatbot:no_clarification,1,,27,False,False
+T1-04,single,real,5,,1.0,1.0,1.0,0.0,0,37,"[17383, 169838, 154275, 154768, 156272]",chatbot:no_clarification,1,,2,False,False
+T1-05,single,real,5,,1.0,1.0,1.0,0.0,0,66,"[157057, 169008, 161788, 168332, 135049]",chatbot:no_clarification,1,,17,False,False
+T1-06,single,real,5,,1.0,1.0,1.0,0.0,0,13,"[134223, 157057, 17383, 154205, 134395]",chatbot:no_clarification,1,,21,False,False
+T1-07,single,rule,5,,1.0,1.0,1.0,0.0,0,12,"[168614, 154275, 169836, 169559, 169880]",chatbot:no_clarification,1,,1,False,False
+T1-08,single,real,5,,1.0,1.0,1.0,0.0,0,13,"[134223, 149028, 154625, 152347, 154620]",chatbot:no_clarification,1,,3,False,False
+T2-01,multi,real,5,,1.0,1.0,1.0,0.0,0,15,"[169856, 156997, 151905, 169862, 156992]",chatbot:no_clarification,1,,2,False,False
+T2-02,multi,real,5,,1.0,1.0,1.0,0.0,0,6,"[155131, 168551, 168316, 169131, 155132]",chatbot:no_clarification,1,,2,False,False
+T2-03,multi,real,5,,1.0,1.0,1.0,0.0,0,6,"[149588, 17383, 134223, 131859, 157057]",chatbot:no_clarification,1,,17,False,False
+T2-04,multi,rule,5,,1.0,1.0,1.0,0.0,0,6,"[154275, 169559, 170050, 170061, 169711]",chatbot:no_clarification,1,,1,False,False
+T2-05,multi,real,5,,0.8,1.0,1.0,0.0,0,4,"[169862, 133679, 169838, 161237, 169856]",chatbot:no_clarification,1,,21,False,False
+T2-06,multi,real,5,,0.2,1.0,1.0,0.0,0,1,"[169880, 134223, 154768, 169838, 149028]",chatbot:no_clarification,1,,10,False,False
+T2-07,multi,real,5,,0.2,1.0,1.0,0.8,0,1,"[17383, 154768, 169838, 134223, 169008]",chatbot:no_clarification,1,,7,True,False
+T2-08,multi,real,5,,1.0,1.0,1.0,0.0,0,5,"[149028, 154620, 134893, 148984, 149022]",chatbot:no_clarification,1,,2,False,False
+T2-09,multi,real,5,,1.0,1.0,1.0,0.0,0,13,"[156796, 169176, 154275, 170050, 160939]",chatbot:no_clarification,1,,6,False,False
+T2-10,multi,real,5,,1.0,1.0,1.0,0.0,0,5,"[134223, 134057, 136331, 151065, 135055]",chatbot:no_clarification,1,,20,False,False
+T3-01,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,43,"[169008, 157057, 161788, 154620, 169856]",chatbot:no_clarification,1,,3,False,False
+T3-02,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,55,"[156796, 154768, 157011, 169836, 155113]",chatbot:no_clarification,1,,4,False,False
+T3-03,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,63,"[17383, 154768, 149588, 149028, 156997]",chatbot:no_clarification,1,,3,False,False
+T3-04,group,synthetic,5,0.6,1.0,1.0,1.0,0.0,0,9,"[169838, 169008, 17383, 169176, 165117]",chatbot:no_clarification,1,,2,False,False
+T3-05,group,synthetic,5,0.2,0.6,1.0,1.0,0.0,0,3,"[168614, 170061, 169711, 169588, 168905]",chatbot:no_clarification,1,,5,False,False
+T3-06,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,43,"[154620, 169856, 138695, 140613, 155331]",chatbot:no_clarification,1,,4,False,False
+T3-07,group,synthetic,5,,1.0,1.0,1.0,0.0,0,6,"[168608, 168316, 154785, 169925, 155092]",chatbot:no_clarification,1,,32,False,False
+T3-08,group,real,5,,1.0,1.0,1.0,0.0,0,31,"[154275, 160953, 168608, 170497, 133679]",chatbot:no_clarification,1,,3,False,False
+T3-09,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,50,"[169963, 154768, 169836, 161788, 169560]",chatbot:no_clarification,1,,32,False,False
+T3-10,group,rule,5,,1.0,1.0,1.0,0.0,0,6,"[154275, 169559, 170050, 170061, 169711]",chatbot:no_clarification,1,,2,False,False
+T4-01,itinerary,real,3,,1.0,1.0,1.0,0.0,0,26,"[156997, 157057, 17383]",chatbot:no_clarification,1,,10,False,True
+T4-02,itinerary,synthetic,3,1.0,1.0,1.0,1.0,0.0,0,56,"[169856, 157057, 169008]",chatbot:no_clarification,1,,7,False,True
+T4-03,itinerary,synthetic,3,1.0,1.0,1.0,1.0,0.0,0,42,"[134893, 154768, 156272]",chatbot:no_clarification,1,,8,False,True
+T4-04,itinerary,real,2,,0.6666666666666666,0.6666666666666666,0.7653606369886218,0.0,0,15,"[133679, 134223]",chatbot:no_clarification,1,,12,False,True
+T4-05,itinerary,real,3,,0.6666666666666666,0.6666666666666666,0.7653606369886218,0.0,0,5,"[134395, 157057, 154275]",chatbot:no_clarification,1,,11,False,True
+T5-01,underspecified,synthetic,5,1.0,0.2,0.25,0.3903800499921017,0.8,4,4,"[169008, 156796, 169838, 157057, 154620]",chatbot:no_clarification,1,,6,False,False
+T5-02,underspecified,synthetic,5,1.0,0.2,0.5,0.24153350098894139,0.2,1,2,"[17383, 149588, 154768, 169588, 149028]",chatbot:no_clarification,1,,6,False,False
+T5-03,underspecified,real,5,,0.0,0.0,0.0,0.8,4,4,"[134223, 161227, 169856, 168316, 134893]",chatbot:no_clarification,1,,25,False,False
+T5-04,underspecified,synthetic,5,0.0,0.2,0.2,0.1695801026368081,0.0,0,17,"[169008, 168614, 169638, 169880, 168905]",chatbot:no_clarification,1,,5,False,False
+T5-05,underspecified,synthetic,5,1.0,0.2,0.2,0.16958010263680806,0.8,4,5,"[169008, 156796, 169838, 157057, 154620]",chatbot:no_clarification,1,,6,False,False
+T5-06,underspecified,real,5,,1.0,1.0,1.0,0.0,0,20,"[134223, 168614, 154620, 152347, 169856]",chatbot:no_clarification,2,location=tampines,2,False,False
+T6-01,impossible,real,0,,,,,,0,0,[],chatbot:no_clarification,1,,2,False,False
+T6-02,impossible,synthetic,0,,,,,,0,0,[],chatbot:no_clarification,1,,20,False,False
+T6-03,impossible,real,5,,,,,1.0,0,0,"[169836, 169008, 168332, 168614, 134223]",chatbot:no_clarification,1,,21,True,False
+T1-01,single,real,5,,1.0,1.0,1.0,0.0,0,5,"[151060, 135049, 140613, 151065, 140615]",chatbot:no_relaxation,1,,60,False,False
+T1-02,single,real,5,,1.0,1.0,1.0,0.0,0,10,"[169008, 160953, 161833, 169396, 169880]",chatbot:no_relaxation,2,dates=no preference,131,False,False
+T1-03,single,real,5,,1.0,1.0,1.0,0.0,0,41,"[154768, 155132, 156272, 154796, 155124]",chatbot:no_relaxation,3,dates=no preference; group=Just me,286,False,False
+T1-04,single,real,5,,1.0,1.0,1.0,0.0,0,37,"[17383, 169838, 154275, 154768, 156272]",chatbot:no_relaxation,1,,25,False,False
+T1-05,single,real,5,,1.0,1.0,1.0,0.0,0,66,"[157057, 169008, 161788, 168332, 135049]",chatbot:no_relaxation,3,group=Just me; budget=No limit,219,False,False
+T1-06,single,real,5,,1.0,1.0,1.0,0.0,0,13,"[134223, 157057, 17383, 154205, 134395]",chatbot:no_relaxation,2,group=Just me,156,False,False
+T1-07,single,rule,5,,1.0,1.0,1.0,0.0,0,12,"[168614, 154275, 169836, 169559, 169880]",chatbot:no_relaxation,1,,1,False,False
+T1-08,single,real,5,,1.0,1.0,1.0,0.0,0,13,"[134223, 149028, 154625, 152347, 154620]",chatbot:no_relaxation,1,,43,False,False
+T2-01,multi,real,5,,1.0,1.0,1.0,0.0,0,15,"[169856, 156997, 151905, 169862, 156992]",chatbot:no_relaxation,1,,18,False,False
+T2-02,multi,real,5,,1.0,1.0,1.0,0.0,0,6,"[155131, 168551, 168316, 169131, 155132]",chatbot:no_relaxation,1,,15,False,False
+T2-03,multi,real,5,,1.0,1.0,1.0,0.0,0,6,"[149588, 17383, 134223, 131859, 157057]",chatbot:no_relaxation,1,,49,False,False
+T2-04,multi,rule,5,,1.0,1.0,1.0,0.0,0,6,"[154275, 169559, 170050, 170061, 169711]",chatbot:no_relaxation,1,,2,False,False
+T2-05,multi,real,5,,0.8,1.0,1.0,0.0,0,4,"[169862, 133679, 169838, 161237, 169856]",chatbot:no_relaxation,1,,55,False,False
+T2-06,multi,real,5,,0.2,1.0,1.0,0.0,0,1,"[169880, 134223, 154768, 169838, 149028]",chatbot:no_relaxation,1,,43,False,False
+T2-07,multi,real,1,,0.2,1.0,1.0,0.0,0,1,[17383],chatbot:no_relaxation,1,,2,False,False
+T2-08,multi,real,5,,1.0,1.0,1.0,0.0,0,5,"[149028, 154620, 134893, 148984, 149022]",chatbot:no_relaxation,1,,22,False,False
+T2-09,multi,real,5,,1.0,1.0,1.0,0.0,0,13,"[156796, 169176, 154275, 170050, 160939]",chatbot:no_relaxation,1,,68,False,False
+T2-10,multi,real,5,,1.0,1.0,1.0,0.0,0,5,"[134223, 134057, 136331, 151065, 135055]",chatbot:no_relaxation,1,,48,False,False
+T3-01,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,43,"[169008, 157057, 161788, 154620, 169856]",chatbot:no_relaxation,1,,23,False,False
+T3-02,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,55,"[156796, 154768, 157011, 169836, 155113]",chatbot:no_relaxation,2,dates=no preference,78,False,False
+T3-03,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,63,"[17383, 154768, 149588, 149028, 156997]",chatbot:no_relaxation,1,,27,False,False
+T3-04,group,synthetic,5,0.6,1.0,1.0,1.0,0.0,0,9,"[169838, 169008, 17383, 169176, 165117]",chatbot:no_relaxation,1,,2,False,False
+T3-05,group,synthetic,5,0.2,0.6,1.0,1.0,0.0,0,3,"[168614, 170061, 169711, 169588, 168905]",chatbot:no_relaxation,2,dates=no preference,61,False,False
+T3-06,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,43,"[154620, 169856, 138695, 140613, 155331]",chatbot:no_relaxation,1,,30,False,False
+T3-07,group,synthetic,5,,1.0,1.0,1.0,0.0,0,6,"[168608, 168316, 154785, 169925, 155092]",chatbot:no_relaxation,1,,27,False,False
+T3-08,group,real,5,,1.0,1.0,1.0,0.0,0,31,"[154275, 160953, 168608, 170497, 133679]",chatbot:no_relaxation,2,interests=Surprise me,28,False,False
+T3-09,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,50,"[169963, 154768, 169836, 161788, 169560]",chatbot:no_relaxation,2,dates=no preference,107,False,False
+T3-10,group,rule,5,,1.0,1.0,1.0,0.0,0,6,"[154275, 169559, 170050, 170061, 169711]",chatbot:no_relaxation,1,,2,False,False
+T4-01,itinerary,real,3,,1.0,1.0,1.0,0.0,0,26,"[156997, 157057, 17383]",chatbot:no_relaxation,1,,12,False,True
+T4-02,itinerary,synthetic,3,1.0,1.0,1.0,1.0,0.0,0,56,"[169856, 157057, 169008]",chatbot:no_relaxation,1,,8,False,True
+T4-03,itinerary,synthetic,3,1.0,1.0,1.0,1.0,0.0,0,42,"[134893, 154768, 156272]",chatbot:no_relaxation,1,,9,False,True
+T4-04,itinerary,real,2,,0.6666666666666666,0.6666666666666666,0.7653606369886218,0.0,0,15,"[133679, 134223]",chatbot:no_relaxation,1,,15,False,True
+T4-05,itinerary,real,3,,0.6666666666666666,0.6666666666666666,0.7653606369886218,0.0,0,5,"[134395, 157057, 154275]",chatbot:no_relaxation,1,,11,False,True
+T5-01,underspecified,synthetic,5,1.0,0.2,0.25,0.3903800499921017,0.8,4,4,"[169008, 156796, 169838, 157057, 154620]",chatbot:no_relaxation,2,interests=Surprise me,129,False,False
+T5-02,underspecified,synthetic,5,1.0,0.4,1.0,0.8884862264047996,0.2,1,2,"[154768, 161227, 156272, 169638, 134399]",chatbot:no_relaxation,3,interests=Music; dates=Next 2 weeks,150,False,False
+T5-03,underspecified,real,5,,0.0,0.0,0.0,0.8,4,4,"[134223, 168316, 161227, 169856, 134893]",chatbot:no_relaxation,4,group=Just me; dates=no preference; budget=Up to $50,236,False,False
+T5-04,underspecified,synthetic,5,0.4,1.0,1.0,1.0,0.0,0,17,"[156796, 161227, 154768, 156272, 154275]",chatbot:no_relaxation,2,interests=Music,76,False,False
+T5-05,underspecified,synthetic,5,1.0,0.2,0.2,0.16958010263680806,0.8,4,5,"[169008, 156796, 169838, 157057, 154620]",chatbot:no_relaxation,3,group=With kids; interests=Surprise me,134,False,False
+T5-06,underspecified,real,5,,1.0,1.0,1.0,0.0,0,20,"[134223, 168614, 154620, 152347, 169856]",chatbot:no_relaxation,2,location=tampines,15,False,False
+T6-01,impossible,real,0,,,,,,0,0,[],chatbot:no_relaxation,1,,1,False,False
+T6-02,impossible,synthetic,0,,,,,,0,0,[],chatbot:no_relaxation,1,,18,False,False
+T6-03,impossible,real,5,,,,,1.0,0,0,"[169836, 169008, 168332, 168614, 134223]",chatbot:no_relaxation,3,group=Just me; budget=No limit,111,True,False
+T1-01,single,real,5,,1.0,1.0,1.0,0.0,0,5,"[151060, 135049, 140613, 151065, 140615]",chatbot:no_retrieval,1,,57,False,False
+T1-02,single,real,5,,1.0,1.0,1.0,0.0,0,10,"[169008, 160953, 169396, 169880, 161652]",chatbot:no_retrieval,2,dates=no preference,96,False,False
+T1-03,single,real,5,,0.8,0.8,0.9125299483251055,0.0,0,41,"[154768, 156272, 155131, 157011, 161227]",chatbot:no_retrieval,4,dates=no preference; group=Just me; location=no preference,206,False,False
+T1-04,single,real,5,,1.0,1.0,1.0,0.0,0,37,"[17383, 169838, 154275, 154768, 156272]",chatbot:no_retrieval,1,,25,False,False
+T1-05,single,real,5,,1.0,1.0,1.0,0.0,0,66,"[134223, 169008, 168614, 161788, 149028]",chatbot:no_retrieval,3,group=Just me; budget=No limit,61,False,False
+T1-06,single,real,5,,1.0,1.0,1.0,0.0,0,13,"[134223, 17383, 157057, 154205, 169880]",chatbot:no_retrieval,2,group=Just me,87,False,False
+T1-07,single,rule,5,,1.0,1.0,1.0,0.0,0,12,"[168614, 154275, 169836, 169559, 169880]",chatbot:no_retrieval,1,,1,False,False
+T1-08,single,real,5,,1.0,1.0,1.0,0.0,0,13,"[134223, 149028, 154625, 152347, 154620]",chatbot:no_retrieval,1,,42,False,False
+T2-01,multi,real,5,,1.0,1.0,1.0,0.0,0,15,"[169856, 156997, 151905, 169862, 156992]",chatbot:no_retrieval,1,,18,False,False
+T2-02,multi,real,5,,1.0,1.0,1.0,0.0,0,6,"[155131, 168551, 168316, 169131, 155132]",chatbot:no_retrieval,1,,15,False,False
+T2-03,multi,real,5,,1.0,1.0,1.0,0.0,0,6,"[134223, 17383, 149588, 157057, 131859]",chatbot:no_retrieval,1,,19,False,False
+T2-04,multi,rule,5,,1.0,1.0,1.0,0.0,0,6,"[154275, 169559, 170050, 170061, 169711]",chatbot:no_retrieval,1,,1,False,False
+T2-05,multi,real,5,,0.8,1.0,1.0,0.0,0,4,"[133679, 169862, 169838, 161237, 149028]",chatbot:no_retrieval,1,,28,False,False
+T2-06,multi,real,5,,0.2,1.0,1.0,0.0,0,1,"[169880, 134223, 154768, 169838, 149028]",chatbot:no_retrieval,1,,40,False,False
+T2-07,multi,real,5,,0.2,1.0,1.0,0.8,0,1,"[17383, 154768, 169838, 134223, 169008]",chatbot:no_retrieval,1,,6,True,False
+T2-08,multi,real,5,,1.0,1.0,1.0,0.0,0,5,"[149028, 154620, 134893, 148984, 149022]",chatbot:no_retrieval,1,,20,False,False
+T2-09,multi,real,5,,1.0,1.0,1.0,0.0,0,13,"[156796, 169176, 154275, 170050, 160939]",chatbot:no_retrieval,1,,64,False,False
+T2-10,multi,real,5,,1.0,1.0,1.0,0.0,0,5,"[134223, 136331, 151065, 134057, 135055]",chatbot:no_retrieval,1,,29,False,False
+T3-01,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,43,"[169008, 157057, 161788, 154620, 169856]",chatbot:no_retrieval,1,,24,False,False
+T3-02,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,55,"[156796, 154768, 157011, 169836, 155113]",chatbot:no_retrieval,2,dates=no preference,54,False,False
+T3-03,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,63,"[17383, 154768, 149588, 149028, 156997]",chatbot:no_retrieval,1,,47,False,False
+T3-04,group,synthetic,5,0.6,1.0,1.0,1.0,0.0,0,9,"[169838, 169008, 17383, 169176, 165117]",chatbot:no_retrieval,1,,2,False,False
+T3-05,group,synthetic,5,0.2,0.6,1.0,1.0,0.0,0,3,"[168614, 170061, 169711, 169588, 168905]",chatbot:no_retrieval,2,dates=no preference,60,False,False
+T3-06,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,43,"[154620, 169856, 138695, 140613, 155331]",chatbot:no_retrieval,1,,31,False,False
+T3-07,group,synthetic,5,,1.0,1.0,1.0,0.0,0,6,"[168608, 168316, 154785, 169925, 155092]",chatbot:no_retrieval,1,,2,False,False
+T3-08,group,real,5,,1.0,1.0,1.0,0.0,0,31,"[154275, 160953, 168608, 170497, 133679]",chatbot:no_retrieval,2,interests=Surprise me,28,False,False
+T3-09,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,50,"[156796, 154768, 156272, 169963, 169836]",chatbot:no_retrieval,2,dates=no preference,71,False,False
+T3-10,group,rule,5,,1.0,1.0,1.0,0.0,0,6,"[154275, 169559, 170050, 170061, 169711]",chatbot:no_retrieval,1,,2,False,False
+T4-01,itinerary,real,3,,1.0,1.0,1.0,0.0,0,26,"[156997, 157057, 17383]",chatbot:no_retrieval,1,,12,False,True
+T4-02,itinerary,synthetic,3,1.0,1.0,1.0,1.0,0.0,0,56,"[169856, 157057, 169008]",chatbot:no_retrieval,1,,7,False,True
+T4-03,itinerary,synthetic,3,1.0,1.0,1.0,1.0,0.0,0,42,"[134893, 154768, 156272]",chatbot:no_retrieval,1,,8,False,True
+T4-04,itinerary,real,2,,0.6666666666666666,0.6666666666666666,0.7653606369886218,0.0,0,15,"[133679, 134223]",chatbot:no_retrieval,1,,12,False,True
+T4-05,itinerary,real,3,,0.6666666666666666,0.6666666666666666,0.7653606369886218,0.0,0,5,"[134395, 157057, 154275]",chatbot:no_retrieval,1,,10,False,True
+T5-01,underspecified,synthetic,5,1.0,0.2,0.25,0.3903800499921017,0.8,4,4,"[169008, 156796, 169838, 157057, 154620]",chatbot:no_retrieval,2,interests=Surprise me,134,False,False
+T5-02,underspecified,synthetic,5,1.0,0.4,1.0,0.8884862264047996,0.2,1,2,"[154768, 161227, 156272, 169638, 134399]",chatbot:no_retrieval,3,interests=Music; dates=Next 2 weeks,152,False,False
+T5-03,underspecified,real,5,,0.0,0.0,0.0,0.8,4,4,"[134223, 169008, 156796, 168614, 169838]",chatbot:no_retrieval,2,group=Just me,112,False,False
+T5-04,underspecified,synthetic,5,0.4,1.0,1.0,1.0,0.0,0,17,"[156796, 161227, 154768, 156272, 154275]",chatbot:no_retrieval,2,interests=Music,92,False,False
+T5-05,underspecified,synthetic,5,1.0,0.2,0.2,0.16958010263680806,0.8,4,5,"[169008, 156796, 169838, 157057, 154620]",chatbot:no_retrieval,3,group=With kids; interests=Surprise me,138,False,False
+T5-06,underspecified,real,5,,1.0,1.0,1.0,0.0,0,20,"[134223, 168614, 154620, 152347, 169856]",chatbot:no_retrieval,2,location=tampines,17,False,False
+T6-01,impossible,real,0,,,,,,0,0,[],chatbot:no_retrieval,1,,1,False,False
+T6-02,impossible,synthetic,0,,,,,,0,0,[],chatbot:no_retrieval,1,,3,False,False
+T6-03,impossible,real,5,,,,,1.0,0,0,"[134223, 169008, 156796, 169838, 168614]",chatbot:no_retrieval,2,group=Just me,58,True,False
+T1-01,single,real,5,,1.0,1.0,1.0,0.0,0,5,"[151060, 135049, 140613, 151065, 140615]",chatbot:no_groupfit,1,,57,False,False
+T1-02,single,real,5,,1.0,1.0,1.0,0.0,0,10,"[169008, 160953, 161833, 169396, 169880]",chatbot:no_groupfit,2,dates=no preference,142,False,False
+T1-03,single,real,5,,1.0,1.0,1.0,0.0,0,41,"[154768, 155132, 156272, 154796, 155124]",chatbot:no_groupfit,3,dates=no preference; group=Just me,231,False,False
+T1-04,single,real,5,,1.0,1.0,1.0,0.0,0,37,"[17383, 169838, 154275, 154768, 156272]",chatbot:no_groupfit,1,,26,False,False
+T1-05,single,real,5,,1.0,1.0,1.0,0.0,0,66,"[157057, 169008, 161788, 168332, 135049]",chatbot:no_groupfit,3,group=Just me; budget=No limit,118,False,False
+T1-06,single,real,5,,1.0,1.0,1.0,0.0,0,13,"[134223, 157057, 17383, 154205, 134395]",chatbot:no_groupfit,2,group=Just me,144,False,False
+T1-07,single,rule,5,,1.0,1.0,1.0,0.0,0,12,"[168614, 154275, 169836, 169559, 169880]",chatbot:no_groupfit,1,,1,False,False
+T1-08,single,real,5,,1.0,1.0,1.0,0.0,0,13,"[134223, 149028, 154625, 152347, 154620]",chatbot:no_groupfit,1,,37,False,False
+T2-01,multi,real,5,,1.0,1.0,1.0,0.0,0,15,"[169856, 156997, 151905, 169862, 156992]",chatbot:no_groupfit,1,,17,False,False
+T2-02,multi,real,5,,1.0,1.0,1.0,0.0,0,6,"[155131, 168551, 168316, 169131, 155132]",chatbot:no_groupfit,1,,15,False,False
+T2-03,multi,real,5,,1.0,1.0,1.0,0.0,0,6,"[149588, 17383, 134223, 131859, 157057]",chatbot:no_groupfit,1,,38,False,False
+T2-04,multi,rule,5,,1.0,1.0,1.0,0.0,0,6,"[154275, 169559, 170050, 170061, 169711]",chatbot:no_groupfit,1,,2,False,False
+T2-05,multi,real,5,,0.8,1.0,1.0,0.0,0,4,"[169862, 133679, 169838, 161237, 169856]",chatbot:no_groupfit,1,,42,False,False
+T2-06,multi,real,5,,0.2,1.0,1.0,0.0,0,1,"[169880, 134223, 154768, 169838, 149028]",chatbot:no_groupfit,1,,40,False,False
+T2-07,multi,real,5,,0.2,1.0,1.0,0.8,0,1,"[17383, 154768, 169838, 134223, 169008]",chatbot:no_groupfit,1,,7,True,False
+T2-08,multi,real,5,,1.0,1.0,1.0,0.0,0,5,"[149028, 154620, 134893, 148984, 149022]",chatbot:no_groupfit,1,,21,False,False
+T2-09,multi,real,5,,1.0,1.0,1.0,0.0,0,13,"[156796, 169176, 154275, 170050, 160939]",chatbot:no_groupfit,1,,63,False,False
+T2-10,multi,real,5,,1.0,1.0,1.0,0.0,0,5,"[134223, 134057, 136331, 151065, 135055]",chatbot:no_groupfit,1,,51,False,False
+T3-01,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,43,"[169008, 157057, 161788, 154620, 169856]",chatbot:no_groupfit,1,,25,False,False
+T3-02,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,55,"[156796, 154768, 157011, 169836, 155113]",chatbot:no_groupfit,2,dates=no preference,54,False,False
+T3-03,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,63,"[17383, 154768, 149588, 149028, 156997]",chatbot:no_groupfit,1,,29,False,False
+T3-04,group,synthetic,5,0.6,1.0,1.0,1.0,0.0,0,9,"[169838, 17383, 169008, 169176, 165117]",chatbot:no_groupfit,1,,2,False,False
+T3-05,group,synthetic,5,0.2,0.6,1.0,1.0,0.0,0,3,"[168614, 170061, 169711, 169588, 168905]",chatbot:no_groupfit,2,dates=no preference,61,False,False
+T3-06,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,43,"[154620, 169856, 138695, 140613, 155331]",chatbot:no_groupfit,1,,31,False,False
+T3-07,group,synthetic,5,,1.0,1.0,1.0,0.0,0,6,"[168608, 168316, 154785, 169925, 155092]",chatbot:no_groupfit,1,,28,False,False
+T3-08,group,real,5,,1.0,1.0,1.0,0.0,0,31,"[154275, 160953, 168608, 170497, 133679]",chatbot:no_groupfit,2,interests=Surprise me,28,False,False
+T3-09,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,50,"[169963, 154768, 169836, 161788, 169560]",chatbot:no_groupfit,2,dates=no preference,130,False,False
+T3-10,group,rule,5,,1.0,1.0,1.0,0.0,0,6,"[154275, 169559, 170050, 170061, 169711]",chatbot:no_groupfit,1,,2,False,False
+T4-01,itinerary,real,3,,1.0,1.0,1.0,0.0,0,26,"[156997, 157057, 17383]",chatbot:no_groupfit,1,,10,False,True
+T4-02,itinerary,synthetic,3,1.0,1.0,1.0,1.0,0.0,0,56,"[169856, 157057, 169008]",chatbot:no_groupfit,1,,8,False,True
+T4-03,itinerary,synthetic,3,1.0,1.0,1.0,1.0,0.0,0,42,"[134893, 154768, 156272]",chatbot:no_groupfit,1,,9,False,True
+T4-04,itinerary,real,2,,0.6666666666666666,0.6666666666666666,0.7653606369886218,0.0,0,15,"[133679, 134223]",chatbot:no_groupfit,1,,13,False,True
+T4-05,itinerary,real,3,,0.6666666666666666,0.6666666666666666,0.7653606369886218,0.0,0,5,"[134395, 157057, 154275]",chatbot:no_groupfit,1,,11,False,True
+T5-01,underspecified,synthetic,5,1.0,0.2,0.25,0.3903800499921017,0.8,4,4,"[169008, 156796, 169838, 157057, 154620]",chatbot:no_groupfit,2,interests=Surprise me,126,False,False
+T5-02,underspecified,synthetic,5,1.0,0.4,1.0,0.8884862264047996,0.2,1,2,"[154768, 161227, 156272, 169638, 134399]",chatbot:no_groupfit,3,interests=Music; dates=Next 2 weeks,152,False,False
+T5-03,underspecified,real,5,,0.0,0.0,0.0,0.8,4,4,"[134223, 168316, 161227, 169856, 134893]",chatbot:no_groupfit,4,group=Just me; dates=no preference; budget=Up to $50,225,False,False
+T5-04,underspecified,synthetic,5,0.4,1.0,1.0,1.0,0.0,0,17,"[156796, 161227, 154768, 156272, 154275]",chatbot:no_groupfit,2,interests=Music,80,False,False
+T5-05,underspecified,synthetic,5,1.0,0.2,0.2,0.16958010263680806,0.8,4,5,"[169008, 156796, 169838, 157057, 154620]",chatbot:no_groupfit,3,group=With kids; interests=Surprise me,133,False,False
+T5-06,underspecified,real,5,,1.0,1.0,1.0,0.0,0,20,"[134223, 168614, 154620, 152347, 169856]",chatbot:no_groupfit,2,location=tampines,15,False,False
+T6-01,impossible,real,0,,,,,,0,0,[],chatbot:no_groupfit,1,,1,False,False
+T6-02,impossible,synthetic,0,,,,,,0,0,[],chatbot:no_groupfit,1,,23,False,False
+T6-03,impossible,real,5,,,,,1.0,0,0,"[169836, 169008, 168332, 168614, 134223]",chatbot:no_groupfit,3,group=Just me; budget=No limit,136,True,False
+T1-01,single,real,5,,1.0,1.0,1.0,0.0,0,5,"[135049, 140613, 151060, 140615, 151065]",chatbot:no_fuzzy,1,,44,False,False
+T1-02,single,real,5,,1.0,1.0,1.0,0.0,0,10,"[169008, 169880, 161833, 169396, 160953]",chatbot:no_fuzzy,2,dates=no preference,100,False,False
+T1-03,single,real,5,,1.0,1.0,1.0,0.0,0,41,"[154768, 155132, 156272, 157149, 169131]",chatbot:no_fuzzy,3,dates=no preference; group=Just me,207,False,False
+T1-04,single,real,5,,1.0,1.0,1.0,0.0,0,37,"[17383, 154768, 169838, 169176, 156272]",chatbot:no_fuzzy,2,dates=no preference,41,False,False
+T1-05,single,real,5,,1.0,1.0,1.0,0.0,0,66,"[157057, 161788, 135049, 168332, 169008]",chatbot:no_fuzzy,4,group=Just me; budget=No limit; location=no preference,126,False,False
+T1-06,single,real,5,,1.0,1.0,1.0,0.0,0,13,"[157057, 134223, 134395, 154205, 151060]",chatbot:no_fuzzy,3,group=Just me; dates=no preference,175,False,False
+T1-07,single,rule,5,,1.0,1.0,1.0,0.0,0,12,"[154494, 168614, 169880, 154275, 168905]",chatbot:no_fuzzy,1,,1,False,False
+T1-08,single,real,5,,1.0,1.0,1.0,0.0,0,13,"[136331, 149028, 152347, 154625, 134057]",chatbot:no_fuzzy,1,,33,False,False
+T2-01,multi,real,5,,1.0,1.0,1.0,0.0,0,15,"[134222, 151905, 169856, 134219, 134220]",chatbot:no_fuzzy,1,,15,False,False
+T2-02,multi,real,5,,1.0,1.0,1.0,0.0,0,6,"[157011, 155131, 169131, 168316, 155132]",chatbot:no_fuzzy,1,,13,False,False
+T2-03,multi,real,5,,1.0,1.0,1.0,0.0,0,6,"[149588, 17383, 131859, 134223, 133679]",chatbot:no_fuzzy,1,,33,False,False
+T2-04,multi,rule,5,,1.0,1.0,1.0,0.0,0,6,"[154275, 169711, 169559, 170050, 170061]",chatbot:no_fuzzy,1,,1,False,False
+T2-05,multi,real,5,,0.8,1.0,1.0,0.0,0,4,"[169862, 133679, 169838, 161237, 169856]",chatbot:no_fuzzy,1,,47,False,False
+T2-06,multi,real,5,,0.2,1.0,1.0,0.0,0,1,"[169880, 135049, 135570, 136331, 131859]",chatbot:no_fuzzy,1,,35,False,False
+T2-07,multi,real,5,,0.2,1.0,1.0,0.8,0,1,"[17383, 149588, 157057, 169008, 156796]",chatbot:no_fuzzy,1,,7,True,False
+T2-08,multi,real,5,,1.0,1.0,1.0,0.0,0,5,"[134893, 149028, 154620, 148984, 149022]",chatbot:no_fuzzy,1,,17,False,False
+T2-09,multi,real,5,,1.0,1.0,1.0,0.0,0,13,"[148615, 170050, 156796, 154275, 160939]",chatbot:no_fuzzy,1,,52,False,False
+T2-10,multi,real,5,,1.0,1.0,1.0,0.0,0,5,"[134223, 134057, 136331, 151065, 135055]",chatbot:no_fuzzy,1,,44,False,False
+T3-01,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,43,"[135049, 136331, 131860, 148674, 154620]",chatbot:no_fuzzy,1,,19,False,False
+T3-02,group,synthetic,5,0.8,1.0,1.0,1.0,0.0,0,55,"[156796, 154768, 157011, 169836, 169638]",chatbot:no_fuzzy,2,dates=no preference,45,False,False
+T3-03,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,63,"[134893, 134399, 134222, 156099, 17383]",chatbot:no_fuzzy,1,,25,False,False
+T3-04,group,synthetic,5,0.6,1.0,1.0,1.0,0.0,0,9,"[169008, 169838, 134223, 165117, 169176]",chatbot:no_fuzzy,1,,2,False,False
+T3-05,group,synthetic,5,0.4,0.6,1.0,1.0,0.0,0,3,"[168614, 169711, 170061, 160315, 168905]",chatbot:no_fuzzy,2,dates=no preference,49,False,False
+T3-06,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,43,"[138695, 140613, 154620, 155331, 169856]",chatbot:no_fuzzy,1,,25,False,False
+T3-07,group,synthetic,5,,1.0,1.0,1.0,0.0,0,6,"[168608, 168316, 169925, 154785, 155092]",chatbot:no_fuzzy,1,,18,False,False
+T3-08,group,real,5,,1.0,1.0,1.0,0.0,0,31,"[134893, 133679, 161227, 169856, 169588]",chatbot:no_fuzzy,1,,14,False,False
+T3-09,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,50,"[161788, 169963, 169836, 154768, 160939]",chatbot:no_fuzzy,2,dates=no preference,88,False,False
+T3-10,group,rule,5,,1.0,1.0,1.0,0.0,0,6,"[154275, 169711, 169559, 170050, 170061]",chatbot:no_fuzzy,1,,2,False,False
+T4-01,itinerary,real,2,,0.6666666666666666,0.6666666666666666,0.7653606369886218,0.0,0,26,"[134395, 154205]",chatbot:no_fuzzy,1,,9,False,True
+T4-02,itinerary,synthetic,2,1.0,0.6666666666666666,0.6666666666666666,0.7653606369886217,0.0,0,56,"[133679, 132043]",chatbot:no_fuzzy,1,,6,False,True
+T4-03,itinerary,synthetic,3,1.0,1.0,1.0,1.0,0.0,0,42,"[134893, 154768, 156272]",chatbot:no_fuzzy,1,,8,False,True
+T4-04,itinerary,real,2,,0.6666666666666666,0.6666666666666666,0.7653606369886218,0.0,0,15,"[154625, 134223]",chatbot:no_fuzzy,1,,11,False,True
+T4-05,itinerary,real,2,,0.6666666666666666,0.6666666666666666,0.7653606369886218,0.0,0,5,"[134395, 157057]",chatbot:no_fuzzy,1,,10,False,True
+T5-01,underspecified,synthetic,5,1.0,0.0,0.0,0.0,1.0,5,4,"[135049, 136331, 131860, 148674, 154620]",chatbot:no_fuzzy,3,child_ages=Under 6; interests=Surprise me,95,False,False
+T5-02,underspecified,synthetic,5,1.0,0.2,0.5,0.6156633900822389,0.2,1,2,"[134399, 154768, 148615, 161227, 169638]",chatbot:no_fuzzy,2,interests=Music,91,False,False
+T5-03,underspecified,real,5,,0.0,0.0,0.0,0.8,4,4,"[134223, 161227, 169856, 134893, 168316]",chatbot:no_fuzzy,4,group=Just me; dates=no preference; budget=Up to $50,201,False,False
+T5-04,underspecified,synthetic,5,0.2,1.0,1.0,1.0,0.0,0,17,"[134399, 161788, 148615, 161227, 169638]",chatbot:no_fuzzy,2,interests=Music,60,False,False
+T5-05,underspecified,synthetic,5,1.0,0.0,0.0,0.0,1.0,5,5,"[135049, 136331, 131860, 148674, 149925]",chatbot:no_fuzzy,4,group=With kids; child_ages=6 to 12; interests=Surprise me,66,False,False
+T5-06,underspecified,real,5,,1.0,1.0,1.0,0.0,0,20,"[136331, 133679, 149028, 152347, 157504]",chatbot:no_fuzzy,3,location=tampines; group=Just me,18,False,False
+T6-01,impossible,real,0,,,,,,0,0,[],chatbot:no_fuzzy,1,,2,False,False
+T6-02,impossible,synthetic,0,,,,,,0,0,[],chatbot:no_fuzzy,1,,24,False,False
+T6-03,impossible,real,5,,,,,1.0,0,0,"[169836, 168332, 169008, 168614, 150550]",chatbot:no_fuzzy,3,group=Just me; budget=No limit,100,True,False
+T1-01,single,real,5,,1.0,1.0,1.0,0.0,0,5,"[151060, 135049, 140613, 151065, 140615]",chatbot:no_kg_multihop,1,,41,False,False
+T1-02,single,real,5,,1.0,1.0,1.0,0.0,0,10,"[169008, 160953, 161833, 169396, 169880]",chatbot:no_kg_multihop,2,dates=no preference,157,False,False
+T1-03,single,real,5,,1.0,1.0,1.0,0.0,0,41,"[154768, 155132, 156272, 154796, 155124]",chatbot:no_kg_multihop,3,dates=no preference; group=Just me,179,False,False
+T1-04,single,real,5,,1.0,1.0,1.0,0.0,0,37,"[17383, 169838, 154275, 154768, 156272]",chatbot:no_kg_multihop,1,,25,False,False
+T1-05,single,real,5,,1.0,1.0,1.0,0.0,0,66,"[157057, 169008, 161788, 168332, 135049]",chatbot:no_kg_multihop,3,group=Just me; budget=No limit,114,False,False
+T1-06,single,real,5,,1.0,1.0,1.0,0.0,0,13,"[134223, 157057, 17383, 154205, 134395]",chatbot:no_kg_multihop,2,group=Just me,110,False,False
+T1-07,single,rule,5,,1.0,1.0,1.0,0.0,0,12,"[168614, 154275, 169836, 169559, 169880]",chatbot:no_kg_multihop,1,,2,False,False
+T1-08,single,real,5,,1.0,1.0,1.0,0.0,0,13,"[134223, 149028, 154625, 152347, 154620]",chatbot:no_kg_multihop,1,,36,False,False
+T2-01,multi,real,5,,1.0,1.0,1.0,0.0,0,15,"[169856, 156997, 151905, 169862, 156992]",chatbot:no_kg_multihop,1,,14,False,False
+T2-02,multi,real,5,,1.0,1.0,1.0,0.0,0,6,"[155131, 168551, 168316, 169131, 155132]",chatbot:no_kg_multihop,1,,13,False,False
+T2-03,multi,real,5,,1.0,1.0,1.0,0.0,0,6,"[149588, 17383, 134223, 131859, 157057]",chatbot:no_kg_multihop,1,,30,False,False
+T2-04,multi,rule,5,,1.0,1.0,1.0,0.0,0,6,"[154275, 169559, 170050, 170061, 169711]",chatbot:no_kg_multihop,1,,1,False,False
+T2-05,multi,real,5,,0.8,1.0,0.9520727775370877,0.0,0,4,"[169862, 133679, 169838, 161237, 134223]",chatbot:no_kg_multihop,1,,33,False,False
+T2-06,multi,real,5,,0.2,1.0,1.0,0.0,0,1,"[169880, 134223, 154768, 169838, 149028]",chatbot:no_kg_multihop,1,,32,False,False
+T2-07,multi,real,5,,0.2,1.0,1.0,0.8,0,1,"[17383, 154768, 169838, 134223, 169008]",chatbot:no_kg_multihop,1,,12,True,False
+T2-08,multi,real,5,,1.0,1.0,1.0,0.0,0,5,"[149028, 154620, 134893, 148984, 149022]",chatbot:no_kg_multihop,1,,18,False,False
+T2-09,multi,real,5,,1.0,1.0,1.0,0.0,0,13,"[156796, 169176, 154275, 170050, 160939]",chatbot:no_kg_multihop,1,,53,False,False
+T2-10,multi,real,5,,1.0,1.0,1.0,0.0,0,5,"[134223, 134057, 136331, 151065, 135055]",chatbot:no_kg_multihop,1,,43,False,False
+T3-01,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,43,"[169008, 157057, 161788, 154620, 169856]",chatbot:no_kg_multihop,1,,23,False,False
+T3-02,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,55,"[156796, 154768, 157011, 169836, 155113]",chatbot:no_kg_multihop,2,dates=no preference,59,False,False
+T3-03,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,63,"[17383, 154768, 149588, 149028, 156997]",chatbot:no_kg_multihop,1,,28,False,False
+T3-04,group,synthetic,5,0.6,1.0,1.0,1.0,0.0,0,9,"[169838, 169008, 17383, 169176, 165117]",chatbot:no_kg_multihop,1,,2,False,False
+T3-05,group,synthetic,5,0.4,0.6,1.0,0.8866167491742403,0.0,0,3,"[168614, 170061, 169711, 169008, 156796]",chatbot:no_kg_multihop,2,dates=no preference,55,False,False
+T3-06,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,43,"[154620, 169856, 138695, 140613, 155331]",chatbot:no_kg_multihop,1,,31,False,False
+T3-07,group,synthetic,5,,1.0,1.0,1.0,0.0,0,6,"[168608, 168316, 154785, 169925, 155092]",chatbot:no_kg_multihop,1,,18,False,False
+T3-08,group,real,5,,1.0,1.0,1.0,0.0,0,31,"[154275, 160953, 168608, 170497, 133679]",chatbot:no_kg_multihop,2,interests=Surprise me,28,False,False
+T3-09,group,synthetic,5,1.0,1.0,1.0,1.0,0.0,0,50,"[169963, 154768, 169836, 161788, 169560]",chatbot:no_kg_multihop,2,dates=no preference,96,False,False
+T3-10,group,rule,5,,1.0,1.0,1.0,0.0,0,6,"[154275, 169559, 170050, 170061, 169711]",chatbot:no_kg_multihop,1,,2,False,False
+T4-01,itinerary,real,3,,1.0,1.0,1.0,0.0,0,26,"[156997, 157057, 17383]",chatbot:no_kg_multihop,1,,9,False,True
+T4-02,itinerary,synthetic,3,1.0,1.0,1.0,1.0,0.0,0,56,"[169856, 157057, 169008]",chatbot:no_kg_multihop,1,,7,False,True
+T4-03,itinerary,synthetic,3,1.0,1.0,1.0,1.0,0.0,0,42,"[134893, 154768, 156272]",chatbot:no_kg_multihop,1,,7,False,True
+T4-04,itinerary,real,2,,0.6666666666666666,0.6666666666666666,0.7653606369886218,0.0,0,15,"[133679, 134223]",chatbot:no_kg_multihop,1,,10,False,True
+T4-05,itinerary,real,3,,0.6666666666666666,0.6666666666666666,0.7653606369886218,0.0,0,5,"[134395, 157057, 154275]",chatbot:no_kg_multihop,1,,10,False,True
+T5-01,underspecified,synthetic,5,1.0,0.2,0.25,0.3903800499921017,0.8,4,4,"[169008, 156796, 169838, 157057, 154620]",chatbot:no_kg_multihop,2,interests=Surprise me,126,False,False
+T5-02,underspecified,synthetic,5,1.0,0.4,1.0,0.8884862264047996,0.2,1,2,"[154768, 161227, 156272, 169638, 134399]",chatbot:no_kg_multihop,3,interests=Music; dates=Next 2 weeks,191,False,False
+T5-03,underspecified,real,5,,0.0,0.0,0.0,0.8,4,4,"[134223, 168316, 161227, 169856, 134893]",chatbot:no_kg_multihop,4,group=Just me; dates=no preference; budget=Up to $50,222,False,False
+T5-04,underspecified,synthetic,5,0.4,1.0,1.0,1.0,0.0,0,17,"[156796, 161227, 154768, 156272, 154275]",chatbot:no_kg_multihop,2,interests=Music,63,False,False
+T5-05,underspecified,synthetic,5,1.0,0.2,0.2,0.16958010263680806,0.8,4,5,"[169008, 156796, 169838, 157057, 154620]",chatbot:no_kg_multihop,3,group=With kids; interests=Surprise me,140,False,False
+T5-06,underspecified,real,5,,1.0,1.0,1.0,0.0,0,20,"[134223, 168614, 154620, 152347, 169856]",chatbot:no_kg_multihop,2,location=tampines,15,False,False
+T6-01,impossible,real,0,,,,,,0,0,[],chatbot:no_kg_multihop,1,,1,False,False
+T6-02,impossible,synthetic,0,,,,,,0,0,[],chatbot:no_kg_multihop,1,,19,False,False
+T6-03,impossible,real,5,,,,,1.0,0,0,"[169836, 169008, 168332, 168614, 134223]",chatbot:no_kg_multihop,3,group=Just me; budget=No limit,103,True,False

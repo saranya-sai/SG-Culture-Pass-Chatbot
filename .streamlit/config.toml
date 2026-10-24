@@ -1,0 +1,15 @@
+# Visual theme for the SG Culture Pass AI Chatbot: a vintage, faded wallpaper of Singapore motifs
+# (drawn in app/wallpaper.py), with jade, chilli red and gold accents.
+[theme]
+base = "light"
+primaryColor = "#0E6B63"
+backgroundColor = "#FFFBF4"
+secondaryBackgroundColor = "#F3EADB"
+textColor = "#1B2430"
+font = "sans serif"
+
+[client]
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false

@@ -1,0 +1,47 @@
+column,provenance,meaning_and_method,allowed_values
+event_id,SISTIC_REAL,"SISTIC event ID, unique per listing",integer
+title,SISTIC_REAL,Event title; zero-width and non-breaking spaces removed,text
+cp_category,RULE_DERIVED,"Culture Pass genre. Performance genres map directly; workshops are filed under the art form taught, using title keywords (Step 3)",Heritage | Visual Arts | Theatre | Music | Dance | Films | Literary Arts
+cp_category_rule,PIPELINE_METADATA,ID of the Step 3 rule that set cp_category,G1/G2/K1-K4/F1
+interest_tags,RULE_DERIVED,"Interest concepts the event is about, from title keywords and SISTIC genre (Step 3); feeds the knowledge graph's Event-HAS_INTEREST-Interest links",'|'-separated concepts from data_prep/vocab.py INTEREST_CONCEPTS
+sistic_genre,SISTIC_REAL,SISTIC genre with spellings merged (concert->Concert; two workshop labels->Workshop),text
+sistic_genre_raw,SISTIC_REAL,SISTIC genre exactly as downloaded,text
+start_date,SISTIC_REAL,First date of the listing,YYYY-MM-DD
+end_date,SISTIC_REAL,"Last date of the listing. Long ranges mean 'available on some dates within', not every day",YYYY-MM-DD
+min_price,SISTIC_REAL,Lowest ticket price in S$. 8 values recovered from SISTIC's own max_price/price fields (single-price events),number; CP price filter uses this
+max_price,SISTIC_REAL,Highest ticket price in S$; blank means SISTIC lists only a 'from' price,number or blank
+min_price_recovered,PIPELINE_METADATA,True if min_price was recovered from max_price/price,bool
+rating,MIXED (see *_source),"Content rating. From the title where stated ([G], [Rating: TBA]); General for children's events; otherwise drawn by category",General | Advisory | Advisory 16 | R18 and above | TBA | 6 and Above | 13 and Above | PG13 | PG | 12 and Above
+rating_source,PIPELINE_METADATA,How rating was set,RULE_DERIVED:title | RULE_DERIVED:children | SYNTHETIC
+lang_english,MIXED (see *_source),"Language 'English'. Set from title evidence (Chinese characters, Malay or Tamil title words); otherwise English is assumed",bool; CP filter 'English'
+lang_mandarin,MIXED (see *_source),"Language 'Mandarin'. Set from title evidence (Chinese characters, Malay or Tamil title words); otherwise English is assumed",bool; CP filter 'Mandarin'
+lang_malay,MIXED (see *_source),"Language 'Malay'. Set from title evidence (Chinese characters, Malay or Tamil title words); otherwise English is assumed",bool; CP filter 'Malay'
+lang_tamil,MIXED (see *_source),"Language 'Tamil'. Set from title evidence (Chinese characters, Malay or Tamil title words); otherwise English is assumed",bool; CP filter 'Tamil'
+lang_others,MIXED (see *_source),"Language 'Others'. Set from title evidence (Chinese characters, Malay or Tamil title words); otherwise English is assumed",bool; CP filter 'Others'
+language_source,PIPELINE_METADATA,How the language columns were set,RULE_DERIVED:title | ASSUMED_DEFAULT:English
+gf_family,SYNTHETIC,"'Family-friendly'. Hard rules first (children's events are family-friendly; adult or teen ratings never are; Coffee Morning concerts are senior-friendly), else drawn by category",bool; CP filter 'Family-friendly'
+gf_senior,SYNTHETIC,"'Senior-friendly'. Hard rules first (children's events are family-friendly; adult or teen ratings never are; Coffee Morning concerts are senior-friendly), else drawn by category",bool; CP filter 'Senior-friendly'
+gf_couple,SYNTHETIC,"'Couple-friendly'. Hard rules first (children's events are family-friendly; adult or teen ratings never are; Coffee Morning concerts are senior-friendly), else drawn by category",bool; CP filter 'Couple-friendly'
+gf_accessibility,SYNTHETIC_DERIVED,'Accessibility friendly' = wheelchair-accessible venue AND (calm space OR any content accessibility),bool; CP filter 'Accessibility friendly'
+va_wheelchair,SYNTHETIC,"'Wheelchair-accessible'. Drawn once per venue by venue type, so all events at a venue agree; blank for 'Various Venues'",bool or blank; CP filter 'Wheelchair-accessible'
+va_guide_dog,SYNTHETIC,"'Guide dog friendly'. Drawn once per venue by venue type, so all events at a venue agree; blank for 'Various Venues'",bool or blank; CP filter 'Guide dog friendly'
+va_calm_space,SYNTHETIC,"'Calm spaces'. Drawn once per venue by venue type, so all events at a venue agree; blank for 'Various Venues'",bool or blank; CP filter 'Calm spaces'
+ca_captioning,SYNTHETIC,'Closed or live captioning'. Drawn by category (higher for opera captioning and children's relaxed performances),bool; CP filter 'Closed or live captioning'
+ca_audio_description,SYNTHETIC,'Audio description'. Drawn by category (higher for opera captioning and children's relaxed performances),bool; CP filter 'Audio description'
+ca_sign_language,SYNTHETIC,'Sign language interpretation'. Drawn by category (higher for opera captioning and children's relaxed performances),bool; CP filter 'Sign language interpretation'
+ca_relaxed,SYNTHETIC,'Relaxed performance'. Drawn by category (higher for opera captioning and children's relaxed performances),bool; CP filter 'Relaxed performance'
+ca_tactile,SYNTHETIC,'Touch/tactile experience'. Drawn by category (higher for opera captioning and children's relaxed performances),bool; CP filter 'Touch/tactile experience'
+weekday_sessions,SYNTHETIC,"Assumed session start times on weekdays, from a rule table by event type (SISTIC has no times); blank = no weekday sessions",'|'-separated HH:MM
+weekend_sessions,SYNTHETIC,Assumed session start times on Saturdays and Sundays,'|'-separated HH:MM
+duration_min,SYNTHETIC,Assumed duration of one session in minutes,integer
+schedule_rule,PIPELINE_METADATA,ID of the schedule rule used (Step 5),S1-S10
+venue_name,SISTIC_REAL,Venue as SISTIC writes it,text
+venue_type,RULE_DERIVED,Venue kind from name keywords; sets venue accessibility chances,performing_arts_venue | arts_centre_or_gallery | museum_or_heritage_site | studio_or_shop | unknown
+venue_address,ONEMAP_REAL,Address of the OneMap match,text or blank
+postal_code,ONEMAP_REAL,Postal code of the OneMap match,text or blank
+lat,ONEMAP_REAL,Latitude (WGS84),number or blank
+lon,ONEMAP_REAL,Longitude (WGS84),number or blank
+location_precision,PIPELINE_METADATA,exact = the venue itself; approximate = a nearby landmark the team chose because OneMap does not list the venue,exact | approximate | blank
+geocode_status,PIPELINE_METADATA,Result of the OneMap lookup,found | not_found | not_a_place
+sistic_alias,SISTIC_REAL,SISTIC's internal short name for the listing,text
+thumb_image,SISTIC_REAL,SISTIC image path (relative to sistic.com.sg),text

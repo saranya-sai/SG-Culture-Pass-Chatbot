@@ -1,0 +1,125 @@
+[1/124] llm_plain|T1-01|1 -> [149028] (hallucinated 4) 14s
+[2/124] llm_catalogue|T1-01|1 -> [135049, 133679, 135055, 140613, 148615] (hallucinated 0) 56s
+[3/124] llm_plain|T1-02|1 -> [] (hallucinated 5) 11s
+[4/124] llm_catalogue|T1-02|1 -> [169008, 169043, 169559, 170350, 168827] (hallucinated 0) 55s
+[5/124] llm_plain|T1-03|1 -> [] (hallucinated 5) 14s
+[6/124] llm_catalogue|T1-03|1 -> [155128, 155114, 155053, 155093, 154796] (hallucinated 0) 56s
+[7/124] llm_plain|T1-04|1 -> [] (hallucinated 5) 12s
+[8/124] llm_catalogue|T1-04|1 -> [169043, 154275, 169176, 157011] (hallucinated 1) 54s
+[9/124] llm_plain|T1-05|1 -> [] (hallucinated 5) 13s
+[10/124] llm_catalogue|T1-05|1 -> [169176, 169043, 155126, 155111, 154775] (hallucinated 0) 53s
+[11/124] llm_plain|T1-06|1 -> [] (hallucinated 5) 15s
+[12/124] llm_catalogue|T1-06|1 -> [136331, 133679, 149588, 154964, 168332] (hallucinated 0) 54s
+[13/124] llm_plain|T1-07|1 -> [134037] (hallucinated 4) 12s
+[14/124] llm_catalogue|T1-07|1 -> [154494, 168905, 161652, 154769, 168614] (hallucinated 0) 54s
+[15/124] llm_plain|T1-08|1 -> [] (hallucinated 5) 13s
+[16/124] llm_catalogue|T1-08|1 -> [140615, 155338, 169043, 169176, 157011] (hallucinated 0) 54s
+[17/124] llm_plain|T2-01|1 -> [134039, 135570, 134220] (hallucinated 2) 11s
+[18/124] llm_catalogue|T2-01|1 -> [169689, 169687, 155318, 155325, 155331] (hallucinated 0) 56s
+[19/124] llm_plain|T2-02|1 -> [] (hallucinated 5) 13s
+[20/124] llm_catalogue|T2-02|1 -> [155132, 155126, 155093, 155055, 168827] (hallucinated 0) 59s
+[21/124] llm_plain|T2-03|1 -> [] (hallucinated 5) 16s
+[22/124] llm_catalogue|T2-03|1 -> [169043, 168332, 169043, 157011] (hallucinated 1) 58s
+[23/124] llm_plain|T2-04|1 -> [169588, 169588] (hallucinated 3) 13s
+[24/124] llm_catalogue|T2-04|1 -> [154494, 168905, 152294, 154783, 154801] (hallucinated 0) 59s
+[25/124] llm_plain|T2-05|1 -> [133679, 133782, 149028] (hallucinated 2) 11s
+[26/124] llm_catalogue|T2-05|1 -> [140613, 154451, 169689, 169862, 157504] (hallucinated 0) 60s
+[27/124] llm_plain|T2-06|1 -> [] (hallucinated 5) 15s
+[28/124] llm_catalogue|T2-06|1 -> [169008, 168614, 169559, 169560, 160939] (hallucinated 0) 60s
+[29/124] llm_plain|T2-07|1 -> [] (hallucinated 5) 13s
+[30/124] llm_catalogue|T2-07|1 -> [133782, 169043, 155131, 155132, 155126] (hallucinated 0) 61s
+[31/124] llm_plain|T2-08|1 -> [156992] (hallucinated 4) 11s
+[32/124] llm_catalogue|T2-08|1 -> [169043, 154964, 155338, 155325, 149022] (hallucinated 0) 60s
+[33/124] llm_plain|T2-09|1 -> [155093, 155093] (hallucinated 3) 14s
+[34/124] llm_catalogue|T2-09|1 -> [155055, 154774, 155093, 155093, 154775] (hallucinated 0) 61s
+[35/124] llm_plain|T2-10|1 -> [] (hallucinated 0) 11s
+[36/124] llm_catalogue|T2-10|1 -> [136331, 140613, 149588, 169836, 155131] (hallucinated 0) 62s
+[37/124] llm_plain|T3-01|1 -> [] (hallucinated 5) 89s
+[38/124] llm_catalogue|T3-01|1 -> [169043, 155126, 169560, 157011, 155055] (hallucinated 0) 66s
+[39/124] llm_plain|T3-02|1 -> [] (hallucinated 5) 14s
+[40/124] llm_catalogue|T3-02|1 -> [169836, 155126, 169925, 169560, 155055] (hallucinated 0) 58s
+[41/124] llm_plain|T3-03|1 -> [] (hallucinated 5) 13s
+[42/124] llm_catalogue|T3-03|1 -> [169836, 154964, 169687, 169588, 155126] (hallucinated 0) 61s
+[43/124] llm_plain|T3-04|1 -> [] (hallucinated 5) 13s
+[44/124] llm_catalogue|T3-04|1 -> [135049, 133679, 154451, 169689, 156997] (hallucinated 0) 68s
+[45/124] llm_plain|T3-05|1 -> [] (hallucinated 5) 13s
+[46/124] llm_catalogue|T3-05|1 -> [169711, 161237, 169043, 169588, 168905] (hallucinated 0) 67s
+[47/124] llm_plain|T3-06|1 -> [156992, 131860] (hallucinated 3) 14s
+[48/124] llm_catalogue|T3-06|1 -> [169689, 154964, 169836, 169836, 155126] (hallucinated 0) 62s
+[49/124] llm_plain|T3-07|1 -> [] (hallucinated 5) 14s
+[50/124] llm_catalogue|T3-07|1 -> [169043, 157011, 155131, 155132, 154784] (hallucinated 0) 61s
+[51/124] llm_plain|T3-08|1 -> [155335] (hallucinated 4) 11s
+[52/124] llm_catalogue|T3-08|1 -> [169043, 161652, 155132, 169396, 157011] (hallucinated 0) 60s
+[53/124] llm_plain|T3-09|1 -> [] (hallucinated 5) 11s
+[54/124] llm_catalogue|T3-09|1 -> [155126, 157011, 169560, 155111, 155128] (hallucinated 0) 60s
+[55/124] llm_plain|T3-10|1 -> [] (hallucinated 5) 12s
+[56/124] llm_catalogue|T3-10|1 -> [154494, 168905, 152294, 154964, 156272] (hallucinated 0) 61s
+[57/124] llm_plain|T4-01|1 -> [156992] (hallucinated 4) 13s
+[58/124] llm_catalogue|T4-01|1 -> [169689, 157011, 169559, 154773, 169043] (hallucinated 0) 60s
+[59/124] llm_plain|T4-02|1 -> [134039] (hallucinated 4) 15s
+[60/124] llm_catalogue|T4-02|1 -> [169043, 157011, 169559, 155111, 154783] (hallucinated 0) 61s
+[61/124] llm_plain|T4-03|1 -> [135055] (hallucinated 4) 13s
+[62/124] llm_catalogue|T4-03|1 -> [169043, 154964, 169559, 155132, 155126] (hallucinated 0) 60s
+[63/124] llm_plain|T4-04|1 -> [134037] (hallucinated 4) 13s
+[64/124] llm_catalogue|T4-04|1 -> [169838, 155338, 169687, 169836, 154494] (hallucinated 0) 60s
+[65/124] llm_plain|T4-05|1 -> [] (hallucinated 5) 13s
+[66/124] llm_catalogue|T4-05|1 -> [157504, 169043, 154275, 154768, 155131] (hallucinated 0) 60s
+[67/124] llm_plain|T5-01|1 -> [134039] (hallucinated 4) 12s
+[68/124] llm_catalogue|T5-01|1 -> [135049, 131860, 135570, 169687, 157011] (hallucinated 0) 59s
+[69/124] llm_plain|T5-02|1 -> [169588] (hallucinated 4) 13s
+[70/124] llm_catalogue|T5-02|1 -> [169836, 155126, 169560, 169632, 154964] (hallucinated 0) 60s
+[71/124] llm_plain|T5-03|1 -> [134897, 134039] (hallucinated 3) 13s
+[72/124] llm_catalogue|T5-03|1 -> [135049, 151060, 169687, 169880, 157011] (hallucinated 0) 60s
+[73/124] llm_plain|T5-04|1 -> [] (hallucinated 5) 11s
+[74/124] llm_catalogue|T5-04|1 -> [169838, 155126, 169559, 154774, 169043] (hallucinated 0) 60s
+[75/124] llm_plain|T5-05|1 -> [] (hallucinated 5) 12s
+[76/124] llm_catalogue|T5-05|1 -> [155128, 154964, 155338, 169043] (hallucinated 1) 60s
+[77/124] llm_plain|T5-06|1 -> [] (hallucinated 5) 13s
+[78/124] llm_catalogue|T5-06|1 -> [169043, 169559, 169588, 157011, 169043] (hallucinated 0) 60s
+[79/124] llm_plain|T6-01|1 -> [134039] (hallucinated 4) 12s
+[80/124] llm_catalogue|T6-01|1 -> [170067, 155093, 155055, 157011, 170350] (hallucinated 0) 60s
+[81/124] llm_plain|T6-02|1 -> [] (hallucinated 5) 14s
+[82/124] llm_catalogue|T6-02|1 -> [169836, 168905, 169588, 154494] (hallucinated 1) 60s
+[83/124] llm_plain|T6-03|1 -> [] (hallucinated 5) 12s
+[84/124] llm_catalogue|T6-03|1 -> [168905, 169836, 169963, 169043, 169559] (hallucinated 0) 61s
+[85/124] llm_plain|T1-01|2 -> [148984, 149028, 156099] (hallucinated 2) 16s
+[86/124] llm_catalogue|T1-01|2 -> [135049, 134893, 135055, 133679, 140613] (hallucinated 0) 60s
+[87/124] llm_plain|T1-03|2 -> [] (hallucinated 5) 18s
+[88/124] llm_catalogue|T1-03|2 -> [155126, 154773, 155093, 154774, 155055] (hallucinated 0) 61s
+[89/124] llm_plain|T2-01|2 -> [149028, 135570, 134222, 149022] (hallucinated 1) 11s
+[90/124] llm_catalogue|T2-01|2 -> [155338, 155318, 155331, 157011, 169043] (hallucinated 0) 63s
+[91/124] llm_plain|T2-02|2 -> [168332] (hallucinated 4) 12s
+[92/124] llm_catalogue|T2-02|2 -> [155126, 155132, 168827, 169176, 155093] (hallucinated 0) 60s
+[93/124] llm_plain|T2-05|2 -> [148984, 133679, 134893] (hallucinated 2) 13s
+[94/124] llm_catalogue|T2-05|2 -> [135049, 136331, 133679, 134399, 169043] (hallucinated 0) 60s
+[95/124] llm_plain|T3-01|2 -> [] (hallucinated 5) 13s
+[96/124] llm_catalogue|T3-01|2 -> [169856, 169638, 169559, 168827, 157011] (hallucinated 0) 60s
+[97/124] llm_plain|T3-02|2 -> [] (hallucinated 5) 14s
+[98/124] llm_catalogue|T3-02|2 -> [169963, 154784, 155111, 157011, 169560] (hallucinated 0) 60s
+[99/124] llm_plain|T3-04|2 -> [134039] (hallucinated 4) 12s
+[100/124] llm_catalogue|T3-04|2 -> [135049, 134893, 135570, 169559, 169043] (hallucinated 0) 65s
+[101/124] llm_plain|T3-09|2 -> [168332] (hallucinated 4) 13s
+[102/124] llm_catalogue|T3-09|2 -> [155126, 157011, 155132, 155132, 155055] (hallucinated 0) 65s
+[103/124] llm_plain|T5-01|2 -> [] (hallucinated 5) 21s
+[104/124] llm_catalogue|T5-01|2 -> [135049, 135570, 136331, 155338, 169043] (hallucinated 0) 60s
+[105/124] llm_plain|T1-01|3 -> [148984] (hallucinated 4) 16s
+[106/124] llm_catalogue|T1-01|3 -> [135049, 135570, 134893, 138695, 151060] (hallucinated 0) 61s
+[107/124] llm_plain|T1-03|3 -> [] (hallucinated 5) 16s
+[108/124] llm_catalogue|T1-03|3 -> [155126, 155093, 154774, 155055, 154783] (hallucinated 0) 61s
+[109/124] llm_plain|T2-01|3 -> [149022, 155335, 149028, 134222] (hallucinated 1) 13s
+[110/124] llm_catalogue|T2-01|3 -> [155338, 155318, 154964, 156992, 169689] (hallucinated 0) 60s
+[111/124] llm_plain|T2-02|3 -> [157504] (hallucinated 4) 12s
+[112/124] llm_catalogue|T2-02|3 -> [155126, 155132, 155111, 154785, 155093] (hallucinated 0) 60s
+[113/124] llm_plain|T2-05|3 -> [169862, 148984, 133679] (hallucinated 2) 11s
+[114/124] llm_catalogue|T2-05|3 -> [135049, 133679, 152172, 169043, 154494] (hallucinated 0) 59s
+[115/124] llm_plain|T3-01|3 -> [134039] (hallucinated 4) 12s
+[116/124] llm_catalogue|T3-01|3 -> [169043, 157011, 154275, 169559] (hallucinated 1) 63s
+[117/124] llm_plain|T3-02|3 -> [] (hallucinated 5) 15s
+[118/124] llm_catalogue|T3-02|3 -> [169836, 169963, 157011, 169043, 169559] (hallucinated 0) 65s
+[119/124] llm_plain|T3-04|3 -> [] (hallucinated 5) 13s
+[120/124] llm_catalogue|T3-04|3 -> [135049, 134893, 156997, 155338, 169838] (hallucinated 0) 60s
+[121/124] llm_plain|T3-09|3 -> [] (hallucinated 5) 11s
+[122/124] llm_catalogue|T3-09|3 -> [155126, 155055, 169560, 154774, 155111] (hallucinated 0) 60s
+[123/124] llm_plain|T5-01|3 -> [] (hallucinated 5) 12s
+[124/124] llm_catalogue|T5-01|3 -> [135049, 136331, 155331, 169043, 161227] (hallucinated 0) 62s
+124 LLM runs saved
