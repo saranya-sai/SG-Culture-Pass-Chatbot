@@ -26,7 +26,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 _stamp = max(p.stat().st_mtime for p in ROOT.rglob("*.py") if ".venv" not in p.parts)
 if getattr(sys, "_sgcp_source_stamp", None) != _stamp:
     for _name, _mod in list(sys.modules.items()):
-        if _name != "__main__" and str(getattr(_mod, "__file__", None) or "").startswith(str(ROOT)):
+        _file = str(getattr(_mod, "__file__", None) or "")
+        # only the project's own modules: a local .venv inside the folder holds Streamlit itself
+        if _name != "__main__" and _file.startswith(str(ROOT)) and ".venv" not in _file \
+                and "site-packages" not in _file:
             del sys.modules[_name]
     sys._sgcp_source_stamp = _stamp
 

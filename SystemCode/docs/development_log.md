@@ -228,4 +228,6 @@ report material, not system code); the charts come from `make_charts.py` there, 
   watcher, so the old `dialogue/clarify.py` stayed loaded. A reboot from the Cloud dashboard fixed it.
   `app/app.py` now drops the project's modules whenever a source file has changed, so later pushes load
   fresh code without a reboot (reproduced and checked locally with `--server.fileWatcherType none`).
+  Follow-up the same day: the first version also dropped modules from a `.venv` inside the project
+  folder (Streamlit itself), which crashed local runs; it now skips `.venv` and `site-packages`.
 - **Possible improvements:** group-conflict scenarios for GroupFit, and a user study.
