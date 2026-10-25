@@ -10,7 +10,7 @@ from datetime import date, timedelta
 from data_prep.vocab import CONTENT_ACCESS, GROUP_FRIENDLY, LANGUAGES, VENUE_ACCESS
 from knowledge.frames import PartyFrame
 from knowledge.graph import category_of_interest, interest_match
-from recommend.rank import Recommendation, Scored
+from recommend.rank import Recommendation, Scored, and_join
 from reasoning.rules import RULE_TEXT
 
 DAGGER = "†"
@@ -83,8 +83,10 @@ def reasons(s: Scored, p: PartyFrame, today: date) -> list[str]:
             out.append("In " + "/".join(langs) + ("" if e.language_source.startswith("RULE") else DAGGER))
     if s.verdict.unknown:
         out.append("Could not confirm: " + ", ".join(s.verdict.unknown))
-    if s.relaxed:
-        out.append("Close match: I " + s.relaxed[-1])
+    actions = [w for w in s.relaxed if not w.startswith("no ")]   # "no Films events available" is not an action
+    if actions:
+        out.append("Close match: I " + and_join(actions))
+    out += ["Close match: " + w for w in s.relaxed if w.startswith("no ")]
     return out
 
 

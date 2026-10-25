@@ -6,16 +6,16 @@ import pytest
 from config import REFERENCE_DATE as T
 from dialogue.manager import Chatbot
 from explain.grounded import validate
-from knowledge.catalogue import load_events
+from knowledge.catalogue import by_id, load_events
 from knowledge.frames import Member, PartyFrame
 from knowledge.graph import build_graph, frame
 from nlu.dates import resolve_dates
 from nlu.parse import parse
 from planner.itinerary import Problem, beam_search, decode, exhaustive, genetic
 from reasoning.fuzzy import practicality
-from reasoning.gate import gate
+from reasoning.gate import evaluate, gate
 from reasoning.rules import forward_chain
-from recommend.rank import recommend
+from recommend.rank import RELAX_STEPS, recommend
 
 
 # ---- knowledge --------------------------------------------------------------------------
@@ -103,6 +103,21 @@ def test_relaxation_never_relaxes_access():
     assert all("ca_sign_language" in s.event.content_access for s in rec.items)
 
 
+def test_relaxation_label_names_every_broken_limit():
+    # Found 24 Oct: events found at the distance step ran outside "this weekend" but were labelled
+    # only as beyond the distance limit, because the dates had been widened at an earlier step.
+    f = PartyFrame()
+    parse("My 2 kids (6 and 9) and I want something hands-on this weekend near Tampines under $30", f, T,
+          allow_live=False)
+    rec = recommend(f, T, use_dense=False)
+    words = {rid: w for rid, _, w in RELAX_STEPS}
+    relaxed = [s for s in rec.items if s.relaxed]
+    assert relaxed
+    for s in relaxed:
+        broken = set(evaluate(s.event, rec.wm.requirements).failed)
+        assert broken and all(words[r] in s.relaxed for r in broken if r in words)
+
+
 # ---- planner ----------------------------------------------------------------------------
 def _problem():
     f = PartyFrame()
@@ -140,3 +155,20 @@ def test_dialogue_never_repeats_a_question():
         if r.question:
             asked.append(r.question.slot)
     assert len(asked) == len(set(asked))
+
+
+def test_topic_button_asks_and_its_answer_is_enforced():
+    bot = Chatbot(allow_live_geocoding=False)
+    bot.respond("A classical concert in October below $40")
+    r = bot.ask_about("Access needs")
+    assert r.question and r.question.slot == "needs"
+    r = bot.respond("Wheelchair access")
+    assert r.cards and all(by_id()[c.event_id].venue_access.get("va_wheelchair") is not False for c in r.cards)
+
+
+def test_access_question_is_never_chosen_by_the_policy():
+    for msg in ["something to do with my kids", "anything this weekend", "a show for me and my mum"]:
+        bot = Chatbot(allow_live_geocoding=False)
+        for text in [msg, "no preference", "show me more"]:
+            r = bot.respond(text)
+            assert not (r.question and r.question.slot == "needs")

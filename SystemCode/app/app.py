@@ -4,8 +4,9 @@ Run from the 'Chatbot- Final Version' folder:   .venv/bin/streamlit run app/app.
 
 Two views of the same chatbot:
 - Visitor view (default): a clean chat for someone looking for an outing. What the chatbot can do is shown
-  up front with example requests, the request is summarised as chips, assumptions are one line the user can
-  correct, and explanations open only on request (progressive disclosure).
+  up front as topic buttons (a tap asks about that topic) and example requests, the request is summarised
+  as chips, assumptions are one line the user can correct, and explanations open only on request
+  (progressive disclosure).
 - "Show how it works" (side panel, for assessors): the Party Frame, the experiment switches, criterion
   scores and the full reasoning trace.
 """
@@ -22,6 +23,7 @@ import streamlit as st  # noqa: E402
 
 from config import REFERENCE_DATE  # noqa: E402
 from data_prep.vocab import CONTENT_ACCESS, LANGUAGES, VENUE_ACCESS  # noqa: E402
+from dialogue.clarify import TOPICS  # noqa: E402
 from dialogue.manager import WELCOME, Chatbot  # noqa: E402
 from explain.explain import DAGGER, fmt_day  # noqa: E402
 from llm import client  # noqa: E402
@@ -63,13 +65,18 @@ html, body, [class*="css"], .stMarkdown, .stButton button, .stChatInput textarea
 [data-testid="stBottomBlockContainer"] { background: rgba(255, 251, 244, 0.96); border-radius: 16px 16px 0 0;
   box-shadow: 0 -6px 20px rgba(90, 60, 30, 0.10); }
 [data-testid="stSidebar"] > div:first-child { background: rgba(250, 243, 230, 0.97); }
-.hero { padding: 6px 2px 14px; margin-bottom: 8px; border-bottom: 1px dashed rgba(150, 120, 80, 0.35); }
+.hero { padding: 6px 2px 0; }
 .hero h1 { font-family: "DM Serif Display", Georgia, "Times New Roman", serif; font-size: 2.15rem; font-weight: 400;
   margin: 0 0 4px; color: var(--ink); letter-spacing: 0; line-height: 1.15; }
 .hero h1 .red { color: var(--chilli); }
 .hero p { margin: 0; color: var(--muted); font-size: 0.98rem; }
-.can { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
-.can span { font-size: 0.8rem; background: rgba(255,255,255,.7); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; color: var(--ink); }
+/* topic buttons: what the chatbot understands; a tap asks about that topic */
+.st-key-topics { border-bottom: 1px dashed rgba(150, 120, 80, 0.35); padding: 4px 2px 12px; margin-bottom: 8px; }
+.st-key-topics [data-testid="stHorizontalBlock"] { gap: 6px; flex-wrap: wrap; }
+.st-key-topics [data-testid="stColumn"], .st-key-topics [data-testid="column"] { width: auto !important; flex: 0 0 auto !important; min-width: 0 !important; }
+.st-key-topics .stButton button { background: rgba(255,255,255,.7); border: 1px solid var(--line); color: var(--ink); padding: 3px 10px; min-height: 0; line-height: 1.4; }
+.st-key-topics .stButton button p { font-size: 0.8rem; }
+.st-key-topics .stButton button:hover { background: #fff; border-color: var(--jade); color: var(--jade); }
 .hint { color: var(--muted); font-size: 0.85rem; margin: 6px 0 2px; }
 /* chat bubbles: the user's own messages tinted, so whose message is whose is obvious */
 [data-testid="stChatMessage"] { border-radius: 14px; padding: 0.6rem 0.8rem; }
@@ -244,6 +251,13 @@ def render_reply(entry: dict, key: str) -> None:
                     st.markdown("\n".join(f"- {html.escape(p)}" for p in plain))
 
 
+def ask_topic(topic: str) -> None:
+    """A topic button under the title: the chatbot asks about that topic at once (Chatbot.ask_about)."""
+    st.session_state.history.append({"role": "user", "text": topic, "reply": None, "chips": []})
+    reply = st.session_state.bot.ask_about(topic)
+    st.session_state.history.append({"role": "assistant", "text": reply.text, "reply": reply, "chips": []})
+
+
 def send(text: str) -> None:
     bot = st.session_state.bot
     bot.use_llm = st.session_state.get("use_llm", False)
@@ -280,10 +294,13 @@ st.markdown("""
 <div class="hero">
   <h1>SG Culture Pass <span class="red">AI Chatbot</span></h1>
   <p>Arts and heritage outings that suit everyone you're going with, explained, and planned into a day if you like.</p>
-  <div class="can"><span>Groups &amp; kids' ages</span><span>Budget per person</span><span>Dates &amp; times</span>
-    <span>Near an MRT or area</span><span>Access needs</span><span>Day plans</span></div>
 </div>
 """, unsafe_allow_html=True)
+with st.container(key="topics"):
+    for col, topic in zip(st.columns(len(TOPICS)), TOPICS):
+        if col.button(topic, key=f"topic-{TOPICS[topic]}"):
+            ask_topic(topic)
+            st.rerun()
 
 # ---------------------------------------------------------------- conversation
 for n, entry in enumerate(st.session_state.history):

@@ -1,16 +1,17 @@
 # Development log: SG Culture Pass AI Chatbot (final version)
 
 This log records what was built, every decision and the reason for it, and where things stand.
-Read it before continuing the work. Dates are 2026 unless stated.
+It is the working record kept alongside the report. Dates are 2026 unless stated. Paths that start with
+`Practice Module/` or `Ongoing Deliverables/` are the team's working folders, not this repository.
 
 ## Where things stand (end of 23 Oct)
 
-- **The system is complete and runs.** All eight layers, the Streamlit app, 19 unit tests (all
-  passing) and a full evaluation.
+- **The system is complete and runs.** All eight layers, the Streamlit app, 22 unit tests (all
+  passing; three were added on 25 Oct) and a full evaluation.
 - **The report is in sync with the code.** System Design, System Development & Implementation,
   Experiments, and Findings and Discussion were all written from the code and the measured results.
 - **Not yet done:** a held-out test set written by people outside the
-  team, the team's review of assumed numbers, and Appendix C (the user guide).
+  team, and the team's review of assumed numbers.
 - **24 Oct: the report was finished.** See section 4.
 
 ## 1. The data source (22 to 23 Oct)
@@ -19,7 +20,7 @@ Read it before continuing the work. Dates are 2026 unless stated.
 unique events, because two events appear twice. `sistic_events_raw.pdf` is a printed copy of the
 same rows and columns, made in Numbers.
 
-**Pull date: 11 Sep 2026 (settled by the user, do not reopen).** The team's draft "Data Collection
+**Pull date: 11 Sep 2026.** The team's draft "Data Collection
 And Challenges", saved 11 Sep, already reports the same 354 records and the same missing-value
 counts (30 min_price, 118 max_price, 6 currency_code). The chatbot's "today"
 (`config.REFERENCE_DATE`) is 11 Sep 2026. All 147 Culture Pass events are still running on that date.
@@ -72,7 +73,7 @@ picks.
 |---|---|---|---|
 | 1 Language understanding | `nlu/` | Rules, gazetteer (97 OneMap places in `Curated Data/places.csv`), own date rules plus dateparser for explicit dates. Optional hybrid where the LLM fills only missing slots, validated. | Trained NER: no labelled data. LLM alone: F1 0.48, invents slots, wrong dates, 5 to 13 s per message. |
 | 2 Dialogue | `dialogue/` | Frame-based state tracking. Questions chosen by expected value of information times a per-slot preference prior (group 0.9, dates 0.8, interests 0.7, budget 0.6, location 0.4). Must-ask rules for children's ages and an unnamed family. At most 2 questions, or 3 for a vague first message. Never repeats a question. Questions shown with provisional picks. | Never ask; form-filling; LLM agent. |
-| 3 Knowledge | `knowledge/` | Event frames stored on networkx graph nodes (256 nodes, 1,041 edges). Party Frame as working memory, with the source of each slot (Soar). | Flat table only; OWL; vector store only. |
+| 3 Knowledge | `knowledge/` | Event frames stored on networkx graph nodes (256 nodes, 1,045 edges). Party Frame as working memory, with the source of each slot (Soar). | Flat table only; OWL; vector store only. |
 | 4 Retrieval (RAG: R) | `retrieval/` | BM25, nomic-embed-text and graph expansion, fused by RRF. Embeddings cached in `Processed Data/event_embeddings.json`. | Keyword only; dense only; HyDE, which needs an extra LLM call and titles are short. |
 | 5 Reasoning | `reasoning/` | Forward-chaining rules to a deductive gate (PASS/FAIL/UNKNOWN). Abductive assumptions shown to the user. Fuzzy Mamdani practicality: a 9-rule grid with Ruspini sets anchored to the site's $25/$50/$100 bands, monotone by design. | Bayesian network: no data for the probabilities. Case-based reasoning: no case base. |
 | 6 Recommendation | `recommend/` | Multi-criteria score per member; GroupFit = 0.6 mean + 0.4 min. Cascade: exact PASS, then UNKNOWN, then relaxed, and within each, exact interest before related. MMR diversity. Relaxation never touches age or access. "Near X" adds a 10 km radius. | Collaborative filtering: no interaction data. Content-only. LLM ranking. TransE. |
@@ -185,7 +186,7 @@ list, so numbers update themselves. 18 tables and 5 figures in the body (Figure 
 
 **Backups:** `Practice Module/Report Backups/`. Each one is named by the stage it was taken at.
 
-**Appendices (24 Oct):** A, B and C are now inside the report, after References. A is the original proposal PDF from `Practice Module/Completed Deliverables/First Proposal/`, inserted as 23 page images. B maps the system to MR, RS and CGS: Table B1 (functionality by course), Table B2 (the brief's four technique groups), then the per-layer tables rebuilt from ` Appendix B- ...docx`. C (written 24 Oct) is the installation and user guide: C.1 the public app (link placeholder until deployed), C.2 running locally, C.3 optional Ollama, C.4 using the chatbot step by step with Figures C1 to C4. Deployment steps for the public app are in `docs/deployment.md`; Community Cloud runs `SystemCode/streamlit_app.py`. All course-material links were removed from the report body; Appendix B holds them.
+**Appendices (24 to 25 Oct):** A, B and C are inside the report, after References (decided 25 Oct; there is no separate Appendix C document in the repository). A is the original proposal PDF from `Practice Module/Completed Deliverables/First Proposal/`, inserted as 23 page images. B maps the system to MR, RS and CGS: Table B1 (functionality by course), Table B2 (the brief's four technique groups), then the per-layer tables rebuilt from ` Appendix B- ...docx`. C (written 24 Oct) is the installation and user guide: C.1 the public app (https://sg-culture-pass-chatbot.streamlit.app/), C.2 running locally, C.3 optional Ollama, C.4 using the chatbot step by step with Figures C1 to C4. Deployment steps for the public app are in `docs/deployment.md`; Community Cloud runs `SystemCode/streamlit_app.py`. All course-material links were removed from the report body; Appendix B holds them.
 
 **The draft Appendix B** (`Draft Appendix B- ...docx`) must be left untouched.
 
@@ -199,8 +200,26 @@ list, so numbers update themselves. 18 tables and 5 figures in the body (Figure 
 - **Check two category calls:** Bookbinding is under Literary Arts, and the Lee Kong Chian
   museum is under Heritage.
 - **Find the four ungeocoded venues** if possible.
-- **Write Appendix C, the user guide.** The screenshots in `docs/report_figures/` can be reused.
-- **Check a relaxation label (found 24 Oct).** For "My 2 kids (6 and 9) and I want something
-  hands-on this weekend near Tampines under $30", picks 2 and 3 run on 18 to 20 Sep, outside
-  "this weekend", but their label says only that the distance limit was relaxed.
+- **Relaxation label fixed (found 24 Oct, fixed 25 Oct).** For "My 2 kids (6 and 9) and I want
+  something hands-on this weekend near Tampines under $30", picks 2 and 3 run on 18 to 20 Sep and
+  pick 5 costs $35, but all three were labelled only as beyond the distance limit. Relaxation is
+  cumulative, and a step that found no new events (dates, then budget) was left out of later labels.
+  `recommend/rank.py` now labels each relaxed event with every original limit it breaks (checked
+  with the gate), cards show all of them, and `test_relaxation_label_names_every_broken_limit`
+  covers it. Re-running `system` with Ollama reproduced `system_runs.csv` exactly, so no result
+  changed. Report section 5.4 records the fix.
+- **Public app versus local copy (25 Oct).** Without Ollama (as on Community Cloud), dense retrieval
+  is skipped. On the 42 scenarios the full chatbot then gave different picks in 10 and different
+  questions in 5, with the same nDCG@5 (0.92) and P@5 (0.84), and 1.4 messages instead of 1.5.
+  Appendix C and both READMEs no longer claim the public app is identical; they say the rules,
+  constraint checks and planner are the same and a few rankings and questions can differ.
+- **Topic buttons (25 Oct).** The six hints under the title (groups and kids' ages, budget, dates, area,
+  access needs, day plans) were plain text that looked clickable. They are now buttons, styled the
+  same: a tap calls `Chatbot.ask_about()`, which asks that topic's question with its usual one-tap
+  answers (user initiative), and the answer goes through `respond()` like any other. The questions
+  come from shared builders in `dialogue/clarify.py`, so the policy's own questions are unchanged; the
+  new access-needs question is reachable only by tapping, and "Day plans" shows an example request.
+  Two tests added. Re-running `system` with Ollama reproduced `system_runs.csv` exactly, because the
+  evaluation drives the chatbot through typed messages. Report 4.4, 5.1, 5.5 (Table 10), 6.1 (scope),
+  7.4 and Appendix C updated.
 - **Possible improvements:** group-conflict scenarios for GroupFit, and a user study.

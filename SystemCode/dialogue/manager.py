@@ -273,6 +273,18 @@ class Chatbot:
             lines.append("Why it suits you: " + "; ".join(reasons(s, self.state.frame, self.today)))
         return Reply("\n\n".join(lines))
 
+    def ask_about(self, topic: str) -> Reply:
+        """A topic tapped on the opening screen: ask its question now, with one-tap answers. The answer then
+        goes through respond() like any other, so taps add no new reasoning path."""
+        from dialogue.clarify import topic_question
+        q = topic_question(topic, self.state.frame)
+        if q is None:                                # "Day plans" is a kind of request, not a slot
+            return Reply("Tell me the day and what you'd like to do, for example *Plan my Saturday near Bugis: "
+                         "painting and heritage, 3 things*, and I'll build a timed plan with travel.")
+        self.state.asked = q
+        self.state.asked_slots.add(q.slot)           # the policy will not ask it again
+        return Reply(q.text, question=q)
+
     def _ask_location(self, understood=None) -> Reply:
         from dialogue.clarify import Option, _set_region
         q = Question("location", "Where will you be starting from? Type an area, MRT station or postal "

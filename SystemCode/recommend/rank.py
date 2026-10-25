@@ -25,7 +25,7 @@ from knowledge.geo import travel_minutes
 from knowledge.graph import interest_match
 from reasoning.abductive import MOOD_INTERESTS
 from reasoning.fuzzy import practicality
-from reasoning.gate import Verdict, gate
+from reasoning.gate import Verdict, evaluate, gate
 from reasoning.rules import Requirement, WorkingMemory, forward_chain
 from retrieval.hybrid import retrieve
 
@@ -195,6 +195,10 @@ RELAX_STEPS = [  # (requirement id, how the frame is loosened, wording)
 ]
 
 
+def and_join(xs: list[str]) -> str:
+    return xs[0] if len(xs) == 1 else ", ".join(xs[:-1]) + " and " + xs[-1]
+
+
 def _loosen(p: PartyFrame, how: str) -> PartyFrame:
     from datetime import timedelta
     q = copy.deepcopy(p)
@@ -236,21 +240,24 @@ def recommend(p: PartyFrame, today: date, k: int = TOP_K, exclude_ids: set[int] 
         for rid, how, words in RELAX_STEPS:
             if rid not in active:
                 continue
-            frame = _loosen(frame, how)
+            frame = _loosen(frame, how)              # loosening is cumulative across steps
             _, more = run(frame)
             new = [s for s in more if s.event.event_id not in have]
             for s in new:
-                s.relaxed = relaxed + [words]
+                # Label with every original limit this event breaks, not just the step that found it:
+                # an event found at the distance step may also need the dates widened earlier.
+                broken = set(evaluate(s.event, wm.requirements).failed)
+                s.relaxed = [w for r, _, w in RELAX_STEPS if r in broken] or [words]
                 s.score *= 0.9                       # exact matches always rank first
-            if new:
-                relaxed.append(words)
-                scored += new
-                have |= {s.event.event_id for s in new}
+                relaxed += [w for w in s.relaxed if w not in relaxed]
+            scored += new
+            have |= {s.event.event_id for s in new}
             if len(scored) >= k:
                 break
+        relaxed = [w for _, _, w in RELAX_STEPS if w in relaxed]
         if relaxed:
-            note = ((f"Only {candidates} event{'s' if candidates != 1 else ''} match" if candidates
-                     else "No events match") + " everything you asked for, so I " + " and ".join(relaxed) + ".")
+            note = ((f"Only {candidates} event{' matches' if candidates == 1 else 's match'}" if candidates
+                     else "No events match") + " everything you asked for, so I " + and_join(relaxed) + ".")
     # Cascade: confirmed exact matches first, then events the data cannot confirm, then relaxed
     # matches; within each, events about the requested interest before merely related ones.
     pick = mmr if diversify else (lambda xs, n: sorted(xs, key=lambda s: -s.score)[:n])

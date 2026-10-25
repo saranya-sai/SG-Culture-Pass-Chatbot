@@ -92,37 +92,86 @@ def _set_child_ages(age: int) -> Callable[[PartyFrame, date], None]:
     return f
 
 
+def _add_need(col: str | None) -> Callable[[PartyFrame, date], None]:
+    def f(p: PartyFrame, today: date) -> None:
+        if col:
+            p.members[0].needs.add(col)          # the gate checks the needs of the whole party
+        p.note("needs", "answered", 1.0, "topic button")
+    return f
+
+
+def _group_q() -> Question:
+    return Question("group", "Who's going?", [
+        Option("Just me", _set_members([])),
+        Option("With my partner", _set_members([Member("partner", age_group="adult")])),
+        Option("With kids", _set_members([Member("child", age_group="child")] * 2)),
+        Option("With a senior", _set_members([Member("grandparent", 72, "senior")])),
+        Option("With friends", _set_members([Member("friend", age_group="adult")] * 2))])
+
+
+def _dates_q() -> Question:
+    return Question("dates", "When would you like to go?", [
+        Option("This weekend", _set_dates(-1, None)),
+        Option("Next 2 weeks", _set_dates(0, 14)),
+        Option("This month", _set_dates(0, 30)),
+        Option("Later", _set_dates(31, None))])
+
+
+def _budget_q() -> Question:
+    return Question("budget", "What's your budget per person?", [
+        Option("Up to $25", _set_budget(25)), Option("Up to $50", _set_budget(50)),
+        Option("Up to $100", _set_budget(100)), Option("No limit", _set_budget(None))])
+
+
+def _child_ages_q() -> Question:
+    return Question("child_ages", "How old are the kids?", [
+        Option("Under 6", _set_child_ages(4)), Option("6 to 12", _set_child_ages(9)),
+        Option("13 to 17", _set_child_ages(15))])
+
+
+def _location_q() -> Question:
+    return Question("location", "Which part of Singapore suits you?",
+                    [Option(r, _set_region(r)) for r in ["Central", "East", "West", "North", "North-East"]])
+
+
 def candidate_questions(p: PartyFrame, top_categories: list[str]) -> list[Question]:
     qs = []
     if not p.filled("group") and "group" not in p.sources:
-        qs.append(Question("group", "Who's going?", [
-            Option("Just me", _set_members([])),
-            Option("With my partner", _set_members([Member("partner", age_group="adult")])),
-            Option("With kids", _set_members([Member("child", age_group="child")] * 2)),
-            Option("With a senior", _set_members([Member("grandparent", 72, "senior")])),
-            Option("With friends", _set_members([Member("friend", age_group="adult")] * 2))]))
+        qs.append(_group_q())
     if not p.filled("dates") and "dates" not in p.sources:
-        qs.append(Question("dates", "When would you like to go?", [
-            Option("This weekend", _set_dates(-1, None)),
-            Option("Next 2 weeks", _set_dates(0, 14)),
-            Option("This month", _set_dates(0, 30)),
-            Option("Later", _set_dates(31, None))]))
+        qs.append(_dates_q())
     if not p.filled("budget") and "budget" not in p.sources:
-        qs.append(Question("budget", "What's your budget per person?", [
-            Option("Up to $25", _set_budget(25)), Option("Up to $50", _set_budget(50)),
-            Option("Up to $100", _set_budget(100)), Option("No limit", _set_budget(None))]))
+        qs.append(_budget_q())
     if not p.filled("interests") and "interests" not in p.sources and top_categories:
         qs.append(Question("interests", "What are you in the mood for?",
                            [Option(c, _set_category(c)) for c in top_categories[:4]]
                            + [Option("Surprise me", _set_category(None))]))
     if any(m.age_group == "child" and m.age is None for m in p.members) and "child_ages" not in p.sources:
-        qs.append(Question("child_ages", "How old are the kids?", [
-            Option("Under 6", _set_child_ages(4)), Option("6 to 12", _set_child_ages(9)),
-            Option("13 to 17", _set_child_ages(15))]))
+        qs.append(_child_ages_q())
     if not p.filled("location") and "location" not in p.sources:
-        qs.append(Question("location", "Which part of Singapore suits you?",
-                           [Option(r, _set_region(r)) for r in ["Central", "East", "West", "North", "North-East"]]))
+        qs.append(_location_q())
     return qs
+
+
+# ---- topics the user can open from the opening screen -----------------------------------
+# User initiative: a tapped topic asks its question at once, whether or not the slot is filled, so the
+# user can also change an answer. These are never chosen by the value-of-information policy, and the
+# access-needs question exists only here.
+TOPICS = {"Groups & kids' ages": "group", "Budget per person": "budget", "Dates & times": "dates",
+          "Near an MRT or area": "location", "Access needs": "needs", "Day plans": "plan"}
+
+
+def topic_question(topic: str, p: PartyFrame) -> Question | None:
+    slot = TOPICS.get(topic)
+    if slot == "group":
+        unknown_ages = any(m.age_group == "child" and m.age is None for m in p.members)
+        return _child_ages_q() if unknown_ages else _group_q()
+    if slot == "needs":
+        return Question("needs", "Does anyone going have an access need?", [
+            Option("Wheelchair access", _add_need("va_wheelchair")), Option("Captions", _add_need("ca_captioning")),
+            Option("Sign language", _add_need("ca_sign_language")), Option("Calm space", _add_need("va_calm_space")),
+            Option("None", _add_need(None))])
+    return {"budget": _budget_q, "dates": _dates_q, "location": _location_q}.get(slot, lambda: None)()
 
 
 def evoi(p: PartyFrame, q: Question, today: date, base_ids: list[int], retrieval_off: bool) -> float:
