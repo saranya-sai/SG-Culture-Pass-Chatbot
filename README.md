@@ -30,13 +30,13 @@ Across these prototype scenarios, the findings support the value of separating r
 
 ---
 
-## SECTION 3 : CREDITS / PROJECT CONTRIBUTION
+## SECTION 3 : TEAM
 
-| Official Full Name                 | Student ID (MTech Applicable) | Work Items (Who Did What)     |
-| :--------------------------------- | :---------------------------: | :---------------------------- |
-| Abinaya Muruganandam               |           A0181013X           | [to be filled in by the team] |
-| Adhithi Muruganandam (Team Leader) |           A0181014W           | [to be filled in by the team] |
-| Saranya Srinivasan                 |           A0165428Y           | [to be filled in by the team] |
+| Official Full Name                 | Student ID (MTech Applicable) | 
+| :--------------------------------- | :---------------------------: | 
+| Abinaya Muruganandam               |           A0181013X           | 
+| Adhithi Muruganandam (Team Leader) |           A0181014W           |
+| Saranya Srinivasan                 |           A0165428Y           | 
 
 ---
 
