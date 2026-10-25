@@ -45,7 +45,7 @@ Across these prototype scenarios, the findings support the value of separating r
 - **Business value and use-case demo:** [https://youtu.be/DItA-M33WlA]
 - **High-level system design and technical explanation of a use case:** https://youtu.be/OlSb_80QtaU
 - **Slides for the system-design video (PDF):** `Video/IRS-PM-2026-10-25-GRP 4-SGCulturePass-AIChatbot-SystemArchitecture-Document.zip`
-- **Concept mock-up shown in the demo video:** `Video/Concept Mock-up Slide.pdf` (how the chatbot could appear on the Culture Pass site; not an official feature)
+- **Concept mock-up shown in the system architecture video:** `Video/Concept Mock-up Slide.pdf` (how the chatbot could appear on the Culture Pass site; not an official feature)
 
 ---
 
