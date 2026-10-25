@@ -15,8 +15,20 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+# Streamlit Community Cloud updates the files in place after a push without restarting Python, and runs
+# without a file watcher, so modules imported before the update would stay stale (an ImportError for any
+# new name). When a project source file has changed since the last run, drop the project's modules so they
+# are imported fresh.
+_stamp = max(p.stat().st_mtime for p in ROOT.rglob("*.py") if ".venv" not in p.parts)
+if getattr(sys, "_sgcp_source_stamp", None) != _stamp:
+    for _name, _mod in list(sys.modules.items()):
+        if _name != "__main__" and str(getattr(_mod, "__file__", None) or "").startswith(str(ROOT)):
+            del sys.modules[_name]
+    sys._sgcp_source_stamp = _stamp
 
 import pandas as pd  # noqa: E402
 import streamlit as st  # noqa: E402

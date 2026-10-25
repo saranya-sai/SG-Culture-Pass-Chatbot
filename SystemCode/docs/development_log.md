@@ -222,4 +222,9 @@ list, so numbers update themselves. 18 tables and 5 figures in the body (Figure 
   Two tests added. Re-running `system` with Ollama reproduced `system_runs.csv` exactly, because the
   evaluation drives the chatbot through typed messages. Report 4.4, 5.1, 5.5 (Table 10), 6.1 (scope),
   7.4 and Appendix C updated.
+- **Public app after a push (25 Oct).** The first push left Community Cloud showing "ImportError: cannot
+  import name 'TOPICS'": it updates files in place without restarting Python and runs without a file
+  watcher, so the old `dialogue/clarify.py` stayed loaded. A reboot from the Cloud dashboard fixed it.
+  `app/app.py` now drops the project's modules whenever a source file has changed, so later pushes load
+  fresh code without a reboot (reproduced and checked locally with `--server.fileWatcherType none`).
 - **Possible improvements:** group-conflict scenarios for GroupFit, and a user study.
