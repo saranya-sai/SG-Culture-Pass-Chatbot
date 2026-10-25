@@ -180,8 +180,9 @@ numbered sections:
 8. Conclusion
 
 Then AI Use Declaration, References and Appendices (A, B, C listed). Headings use a Word multilevel
-list, so numbers update themselves. 18 tables and 5 figures in the body (Figure 4 is the side panel in assessor mode). Table 6 (in 4.2) plans the evaluation metric by metric; Table 12 (in 6.1) applies the same metrics, with how each is computed, where it was used and its main result. Screenshots and charts are in
-`docs/report_figures/`; the charts come from `make_charts.py` with values from
+list, so numbers update themselves. 18 tables and 6 figures in the body (Figure 4 is the side panel in assessor mode; Figure 6, in 8.1, is the concept mock-up of the chatbot on the Culture Pass site). Table 6 (in 4.2) plans the evaluation metric by metric; Table 12 (in 6.1) applies the same metrics, with how each is computed, where it was used and its main result. Screenshots and charts are in
+`Miscellaneous/report_figures/` of the repository (moved out of SystemCode on 25 Oct, as they are
+report material, not system code); the charts come from `make_charts.py` there, with values from
 `evaluation/results/summary.md`. Screenshots were taken from the app on 24 Oct with the LLM off.
 
 **Backups:** `Practice Module/Report Backups/`. Each one is named by the stage it was taken at.
